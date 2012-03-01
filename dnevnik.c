@@ -4,14 +4,16 @@
 typedef struct 
   { 
     int number; 
-    int aveageMark; 
+    int averageMark; 
     char name[43]; 
   } student_type;
   
 
 void addStudent(student_type *);
-void showStudents();
+void showStudents(student_type *);
 void changeStudent();
+
+int elementsCount = 0;
 
 int main()
 {
@@ -33,14 +35,21 @@ int main()
   
   while (exit)
   {
+    printf("\nPress 1-4 to call menu commands.");
     key = getchar();
+    while(key != 49 && key != 50 && key != 51 && key != 52)
+    {
+      printf("Unexisting command.");
+      key = getchar();
+    }
     printf("\n");
     
     switch (key)
     {
       case 49 : addStudent(sp);
 	break;
-      case 50 : 
+      case 50 : sp = &clas;
+		showStudents(sp);
 	break;
       case 51 : 
 	break;
@@ -55,14 +64,15 @@ int main()
 void addStudent(student_type *sp)
 {
   sp = (student_type*) malloc(sizeof(student_type));
-   
+  elementsCount++;
+  
   int *numPointer = &(sp->number);
-  int *markPointer = &(sp->aveageMark);
+  int *markPointer = &(sp->averageMark);
   //char *namePointer = &(sp->name);
   char test[43];
   
   printf("Student name: ");
-  scanf("%s", sp->name[43]);
+  scanf("%s", sp->name);
   printf("\n");
   
   printf("Student number in class: ");
@@ -74,7 +84,24 @@ void addStudent(student_type *sp)
   printf("\n");
   
   printf("\n\n");
-  printf("#########################################################################\n");
-  printf("# Student %s (number %d) was successfully created, with average mark %d #", sp->name, sp->number, sp->aveageMark);
-  printf("#######################################################################################################################################");
+  printf("###############################################################################\n");
+  printf("# Student %s (number %d) was successfully created, with average mark %d\n", sp->name, sp->number, sp->averageMark);
+  printf("###############################################################################\n");
+  
+  getchar();
+}
+
+void showStudents(student_type *sp)
+{
+  int i;
+  //printf("n of stud %d", elementsCount);
+  //int test = sp->number;
+  
+  for (i = 0; i < elementsCount; i++)
+  {
+    //sp = sp +i*sizeof(student_type);
+    printf("N %d\n", sp->number); //test);
+    printf("Name %s\n", sp->name);
+    printf("Average mark %d\n", sp->averageMark);
+  }
 }
