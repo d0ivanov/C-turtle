@@ -34,9 +34,9 @@ int main()
   
   switch(key)
   {
-    case 49 : addStudent(studentsPointer);
+    case 49 : addStudent(students);
       break;
-    case 50 : showStudents(studentsPointer);
+    case 50 : showStudents(students);
       break;
     case 51 : return 0;
       break;
@@ -46,7 +46,7 @@ int main()
  return 0;
 }
 
-void addStudent(student_info *studentsPointer)
+void addStudent(student_info students[0])
 {  
   int *numPointer = &students[elementsNum].number;
   int *markPointer = &students[elementsNum].averageMark;
@@ -73,7 +73,7 @@ void addStudent(student_info *studentsPointer)
   getchar();
 }
 
-void showStudents(student_info *studentsPointer)
+void showStudents(student_info students[0])
 {
   int i;
   
