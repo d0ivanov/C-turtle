@@ -45,7 +45,6 @@ int main()
    switch(key)
    {
      case 49 : addStudent();
-     // eto tuk sa se iztrili... <<<<<<<<<<<-------------------------------------------
       break;
      case 50 : showStudents();
       break;
@@ -93,17 +92,17 @@ void showStudents()
     printf("\nStudent Name: %s\n", students[i].name);
     printf("Student class %s\n", students[i].clas);
     printf("Student number %d\n", students[i].number);
-    printf("marksnum %d\n", students[elementsNum].subjects[0].marksNum);
-    printf("marksnum %d\n", students[elementsNum].subjects[1].marksNum);
-    printf("marksnum %d\n", students[elementsNum].subjects[2].marksNum);
     for (k=0; k < 3; k++)
     {
-      for (j = 0; j < students[elementsNum].subjects[k].marksNum; j++)
+      for (j = 0; j < students[i].subjects[k].marksNum; j++)
       {
-	printf("Mark %d %d\n", ++j, students[elementsNum].subjects[k].marks[j]);
+        printf("Mark %d: %d\n", ++j, students[i].subjects[k].marks[j]);
+        j--;
       }
-      printf("Average mark for this subject is: %d\n", students[elementsNum].subjects[k].averageMark);
+      printf("Average mark for this subject is: %d\n", students[i].subjects[k].averageMark);
+      students[i].averageMark += students[i].subjects[k].averageMark;
     }
+    students[i].averageMark /= 3;
     printf("Student average mark %d\n", students[i].averageMark);
   }
   
