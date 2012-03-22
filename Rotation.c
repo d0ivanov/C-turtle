@@ -21,11 +21,11 @@ Object rotateObject(Object);
 
 int main(int argc, char *argv[])
 {
-  Object_1 = getValue(3, 2, 2); // default properties of element of type 3 with position x=0 y=0
+  Object_1 = getValue(3, 0, 0); // default properties of element of type 3 with position x=0 y=0
   
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH | GLUT_RGBA);
-  glutInitWindowSize(1280, 680);
+  glutInitWindowSize(1024, 680);
   glutCreateWindow("C-turtle Rotate");
 
   gluPerspective(60, 1.5, 1, 200);
@@ -127,7 +127,22 @@ void drawObject(Object draw)
 { 
   if (rotate != 0)
   {
-    draw = rotateObject(draw);
+    switch (rotate)
+    {
+      case 1 : draw = rotateObject(draw);
+	     break;
+      case 2 : draw = rotateObject(draw);
+	       draw = rotateObject(draw);
+	break;
+      case 3 : draw = rotateObject(draw);
+	       draw = rotateObject(draw);
+	       draw = rotateObject(draw);
+	break;
+      case 4: draw = rotateObject(draw);
+	      draw = rotateObject(draw);
+	      draw = rotateObject(draw);
+	break;
+    }
   }
   if (rotate == 4) rotate = 0;
   switch (draw.type)
@@ -140,7 +155,6 @@ void drawObject(Object draw)
     case 2 : 
     case 3 : 
     case 4 : drawSquare(draw.centerPos[0], draw.centerPos[1]);
-	     drawSquare(draw.centerPos[0]-0.5, draw.centerPos[1]-0.5); // too see where the center is
 	     drawSquare(draw.otherPos[0][0], draw.otherPos[1][0]);
 	     drawSquare(draw.otherPos[0][1], draw.otherPos[1][1]);
 	     drawSquare(draw.otherPos[0][2], draw.otherPos[1][2]);
