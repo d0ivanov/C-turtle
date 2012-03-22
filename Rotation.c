@@ -183,37 +183,37 @@ Object rotateObject(Object rotateThisObject)
   
   switch (rotateThisObject.numElements)
   {
-    case 3 : for (i = 0; i < rotateThisObject.numElements - 1; i++)
+    case 3 : for (i = 0; i < rotateThisObject.numElements - 2; i++)
 	     {
 	       rotateThisObject.otherPos[0][i] -= rotateThisObject.centerPos[0];
 	       rotateThisObject.otherPos[1][i] -= rotateThisObject.centerPos[1];
 	     }
       
-	     for (i = 0; i < rotateThisObject.numElements - 1; i++)
+	     for (i = 0; i < rotateThisObject.numElements - 2; i++)
 	     {
 	       container = rotateThisObject.otherPos[0][i];
 	       rotateThisObject.otherPos[0][i] = -1 * rotateThisObject.otherPos[1][i];
 	       rotateThisObject.otherPos[1][i] = container;
 	     }
-	     for (i = 0; i < rotateThisObject.numElements - 1; i++)
+	     for (i = 0; i < rotateThisObject.numElements - 2; i++)
 	     {
 	       rotateThisObject.otherPos[0][i] += rotateThisObject.centerPos[0];
 	       rotateThisObject.otherPos[1][i] += rotateThisObject.centerPos[1];
 	     }
       break;
-    case 4 : for (i = 0; i < rotateThisObject.numElements; i++)
+    case 4 : for (i = 0; i < rotateThisObject.numElements - 1; i++)
 	     {
 	       rotateThisObject.otherPos[0][i] -= rotateThisObject.centerPos[0];
 	       rotateThisObject.otherPos[1][i] -= rotateThisObject.centerPos[1];
 	     }
       
-	     for (i = 0; i < rotateThisObject.numElements; i++)
+	     for (i = 0; i < rotateThisObject.numElements - 1; i++)
 	     {
 	       container = rotateThisObject.otherPos[0][i];
 	       rotateThisObject.otherPos[0][i] = -1 * rotateThisObject.otherPos[1][i];
 	       rotateThisObject.otherPos[1][i] = container;
 	     }
-	     for (i = 0; i < rotateThisObject.numElements; i++)
+	     for (i = 0; i < rotateThisObject.numElements - 1; i++)
 	     {
 	       rotateThisObject.otherPos[0][i] += rotateThisObject.centerPos[0];
 	       rotateThisObject.otherPos[1][i] += rotateThisObject.centerPos[1];
