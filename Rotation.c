@@ -138,10 +138,6 @@ void drawObject(Object draw)
 	       draw = rotateObject(draw);
 	       draw = rotateObject(draw);
 	break;
-      case 4: draw = rotateObject(draw);
-	      draw = rotateObject(draw);
-	      draw = rotateObject(draw);
-	break;
     }
   }
   if (rotate == 4) rotate = 0;
