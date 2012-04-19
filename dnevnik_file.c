@@ -89,21 +89,21 @@ void addStudent()
 showStudentsRecursive(int numOfStar)
 {
   FILE *fp;
-  char input, numberString[2];
+  char input, numberString[2]; // numberString - string used for storing data from file, which is later parsed to int
   student_info student;
   int i = 0;
-  int fPos, nameLen, clasLen;
+  int fPos, nameLen, clasLen;  // fPos - used to give the current position in file to the child function
   
   fp = fopen("dnevnik_data.txt", "r");
   
-  fseek(fp, numOfStar, SEEK_SET);
+  fseek(fp, numOfStar, SEEK_SET); // goes to the last position in file of the parent function
   
   if (fp != NULL)
   {
     input = fgetc(fp);
-    while (input != '*')
+    while (input != '*') // '*' is been used to indicate the end of every student (structure)
     {
-      while (input != '#')
+      while (input != '#') // '#' is been used to indicate the end of name variable
       {
 	student.name[i] = input;
 	input = fgetc(fp);
@@ -113,7 +113,7 @@ showStudentsRecursive(int numOfStar)
       
       i = 0;
       input = fgetc(fp);
-      while (input != '#')
+      while (input != '#') // '#' is been used to indicate the end of clas variable
       {
 	student.clas[i] = input;
 	input = fgetc(fp);
@@ -123,18 +123,18 @@ showStudentsRecursive(int numOfStar)
 	
       i = 0;
       input = fgetc(fp);
-      while (input != '#')
+      while (input != '#') // '#' is been used to indicate the end of number variable
       {
 	numberString[i] = input;
 	input = fgetc(fp);
 	i++;
       }
-      if (i == 1) student.number = numberString[0] - 48;
+      if (i == 1) student.number = numberString[0] - 48; // parsing from char to int
 	else student.number = (10 * (numberString[0] - 48)) + (numberString[1] - 48);
 	
       input = fgetc(fp);
       student.averageMark = input - 48;
-      
+      // output the information of the student
       printf("Student name: "); for (i = 0; i < nameLen; i++) printf("%c", student.name[i]); printf("\n");
       printf("Student class: "); for (i = 0; i < clasLen - 1; i++) printf("%c", student.clas[i]); printf("\n");
       printf("Student number in class: %d\n", student.number);
@@ -147,8 +147,8 @@ showStudentsRecursive(int numOfStar)
     printf("\nThere is no data... Please, make some data!\n");
   }
     
-  fPos = ftell(fp);
+  fPos = ftell(fp); // get the current position in file (to the end of the last structure (student))
   input = fgetc(fp);
   fclose(fp);
-  if (input != EOF) showStudentsRecursive(fPos);
+  if (input != EOF) showStudentsRecursive(fPos); // checks if this is the last student or there is more and if there is more the child-function is called
 }
