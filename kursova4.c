@@ -4,7 +4,7 @@
 
 typedef struct
 {
-  char businessNumber[13];
+  char businessNumber[14];
   char name[40];
   float profit[5];
 } business;
@@ -13,6 +13,7 @@ int businessNum = 0; // broi firmi vyvedeni v programata
 
 void addBusiness(business *);
 void showBusiness(business *);
+void showByAverage(business *);
 
 int main()
 {
@@ -21,12 +22,14 @@ int main()
   char key;
  
  
-  printf("###############################\n");
-  printf("# Press 1 to add a business.  #\n");
-  printf("# Press 2 to see a business.  #\n");
-  printf("#                             #\n");
-  printf("# Press 3 to exit.            #\n");
-  printf("###############################\n");
+  printf("#######################################################\n");
+  printf("# Press 1 to add a business.                          #\n");
+  printf("# Press 2 to add array of business.                   #\n");
+  printf("# Press 3 to see a business.                          #\n");
+  printf("# Press 4 to see businesses with average profit over: #\n");
+  printf("#                                                     #\n");
+  printf("# Press 5 to exit.                                    #\n");
+  printf("#######################################################\n");
  
   while(1)
   {
@@ -37,9 +40,17 @@ int main()
     {
       case 49 : addBusiness(business_arr);
 	break;
-      case 50 : showBusiness(business_arr);
+      case 50 : do
+		{
+		  addBusiness(business_arr);
+		  printf("\nTo add new business press 1, to exit to menu press 2. \n");
+		} while (getchar() == 49);
 	break;
-      case 51 : return 0;
+      case 51 : showBusiness(business_arr);
+	break;
+      case 52 : showByAverage(business_arr);
+	break;
+      case 53 : return 0;
 	break;
     }
   }
@@ -72,26 +83,47 @@ void addBusiness(business *business_arr)
 
 void showBusiness(business *business_arr)
 {
-  char businessBul[13]; // bulstata na firmata
+  char businessBul[14]; // bulstata na firmata
   int i, k;
   
   printf("\nEnter business BULSTAT number: ");
   scanf("%s", businessBul);
   
-  printf("\n%s, %s", businessBul, business_arr[0].businessNumber);
-  
   for (i = 0; i < businessNum; i++)
   {
-    if (business_arr[i].businessNumber == businessBul)
+    if (strcmp(business_arr[i].businessNumber, businessBul) == 0)
     {
-      printf("Business BULSTAT numer: %s\n", business_arr[i].businessNumber);
+      printf("\nBusiness BULSTAT numer: %s\n", business_arr[i].businessNumber);
       printf("Business name: %s\n", business_arr[i].name);
       for (k = 1; k <= 5; k++)
       {
-	printf("Profit for year %d: %f\n", k, business_arr[i].profit[k-1]);
+	printf("Profit for year %d: %.2f\n", k, business_arr[i].profit[k-1]);
       }
     }
   }
   
 }
+
+void showByAverage(business* business_arr)
+{
+  float averageProfit;
+  int i, k;
+  
+  printf("Average profit: ");
+  scanf("%f", &averageProfit);
+  
+  for (i = 0; i < businessNum; i++)
+  {
+    if ((business_arr[i].profit[0] + business_arr[i].profit[1] +business_arr[i].profit[2] +business_arr[i].profit[3] +business_arr[i].profit[4])/5 > averageProfit)
+    {
+      printf("\nBusiness BULSTAT numer: %s\n", business_arr[i].businessNumber);
+      printf("Business name: %s\n", business_arr[i].name);
+      for (k = 1; k <= 5; k++)
+      {
+	printf("Profit for year %d: %.2f\n", k, business_arr[i].profit[k-1]);
+      }
+    }
+  }
+}
+
 
