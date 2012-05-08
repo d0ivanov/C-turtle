@@ -51,8 +51,9 @@ void exitMenu(int i);
 int playSound(char*);
 	/*
 	 *  Defines matrix fields with 0 or 1; Gets argument x and y for matrix width and height.
+	 * Use like this: int ** matrix = defMatrix(x, y);
 	 */
 
-void defMatrix(int x, int y);
+int **defMatrix(int x, int y);
 
 #endif

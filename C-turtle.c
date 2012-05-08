@@ -429,16 +429,23 @@ int playSound(char *soundName)
 	return 0;
 }
 
-void defMatrix(int x, int y) 
+int **defMatrix(int x, int y)
 {
   int row, column;
-  int matrix[x][y];
+  int i;
+  int ** matrix = (int **) malloc (x * sizeof(int *));
+  int *matrixReturn;
   
-  for (row = 0, row < y; row++)
+  for (i = 0; i < x; i++)
+  {
+    matrix[i]= (double *) malloc(y * sizeof(int));
+  }
+  
+  for (row = 0; row < y; row++)
   {
     for (column = 0; column < x; column++)
     {
-      if (row == 0 || row == y || column == 0 || column == x) 
+      if (row == 0 || row == y-1 || column == 0 || column == x-1) 
       {
 	matrix[row][column] = 1;
       } else 
@@ -447,4 +454,8 @@ void defMatrix(int x, int y)
       }
     }
   }
+  
+  matrixReturn = matrix;
+  
+  return matrixReturn;
 }
