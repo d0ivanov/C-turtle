@@ -14,8 +14,8 @@ typedef struct
 {
   int type;
   int numElements;
-  int centerPos[2];
-  int otherPos[2][3];
+  int centerPos[2]; //centerPos[0=x / 1=y]
+  int otherPos[2][3]; // otherPos[x=0/y=1][num_of_the_square]
 } Object;
 
 extern int optionTargeted; // shows which option from the menu is targeted by the user
