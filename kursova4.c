@@ -1,25 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdio.h> // vkluchva standartanta biblioteka za input/output
+#include <stdlib.h>  
+#include <string.h> // biblioteka za operacii sys stringove (strcmp)
 
-typedef struct
+typedef struct //deklarirane na struktora
 {
-  char businessNumber[14];
-  char name[40];
-  float profit[5];
-} business;
+  char businessNumber[14]; //masiv ot char-ove s 14 elementa (13 za danychen nomer i 14iq za terminirasht simvol)
+  char name[40]; // masiv ot char-ove s 40 elementa za ime na firmata
+  float profit[5]; // masiv ot tip float za pechalba na firmata za 5 godini (po 1 element za godina)
+} business; // ime na tipa syzdaden ot nas
 
 int businessNum = 0; // broi firmi vyvedeni v programata
 
-void addBusiness(business *);
-void showBusiness(business *);
-void showByAverage(business *);
+void addBusiness(business *); // dobavq nova firma
+void showBusiness(business *); // pokazva firmi chiito dan. nomer syvpada s vyvedeniq ot potrebitelq
+void showByAverage(business *); // pokaza firmi s srednen prihod nad vyvedeniq ot potrebitelq
 
 int main()
 {
-  business business_arr[20];
-  //business *businessPointer = business_arr;
-  char key;
+  business business_arr[20]; // deklaraciq na masiv ot tip business s 20 elementa
+  char key; // deklaraciq na promenliva ot tip char izpolzvana za chetene ot standartniq vhod
  
  
   printf("#######################################################\n");
