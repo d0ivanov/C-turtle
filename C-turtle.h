@@ -10,6 +10,14 @@ struct Image {
 
 typedef struct Image Image;
 
+typedef struct
+{
+  int type;
+  int numElements;
+  int centerPos[2];
+  int otherPos[2][3];
+} Object;
+
 extern int optionTargeted; // shows which option from the menu is targeted by the user
 extern int enterBool; // boolean variable which shows if enter is pressed
 extern int texture[4];
@@ -51,9 +59,26 @@ void exitMenu(int i);
 int playSound(char*);
 	/*
 	 *  Defines matrix fields with 0 or 1; Gets argument x and y for matrix width and height.
-	 * Use like this: int ** matrix = defMatrix(x, y);
+	 * Use like this: 
+	 * int ** matrix;
+	 * defMatrix(x, y, &matrix);
 	 */
 
 int **defMatrix(int x, int y);
+
+	/*
+	 * shows picture slowly.
+	 * It takes score as argument.
+	 */
+void showup(int score);
+	/*
+	 * Checks if the object given as argument can be rotated.
+	 * Returns 1 - can't be rotated, 0 - can be rotated.
+	 */
+int rotateObjectCheck(Object rotateThisObject, int **matrix);
+	/*
+	 * Rotate the object given as argument by 90 degrees counterclockwise.
+	 */
+int rotateObject(Object rotateThisObject, int ***matrix);
 
 #endif

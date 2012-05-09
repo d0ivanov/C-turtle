@@ -247,10 +247,10 @@ void printMenu()
   		glBindTexture(GL_TEXTURE_2D, texture[optionTargeted]);    
   		glBegin(GL_QUADS);		                
     
-    	glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
-    	glTexCoord2f(1.0f, 0.0f); glVertex3f( 10.0f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
-    	glTexCoord2f(1.0f, 1.0f); glVertex3f( 10.0f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
-    	glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
+		  glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
+		  glTexCoord2f(1.0f, 0.0f); glVertex3f( 10.0f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
+		  glTexCoord2f(1.0f, 1.0f); glVertex3f( 10.0f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
+		  glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
 
   		glEnd();  
                 t = GLUT_BITMAP_TIMES_ROMAN_24;
@@ -270,11 +270,11 @@ void printMenu()
   		glBindTexture(GL_TEXTURE_2D, texture[optionTargeted]);    
   		glBegin(GL_QUADS);		                
     
-    	glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
-    	glTexCoord2f(1.0f, 0.0f); glVertex3f( 08.0f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
-    	glTexCoord2f(1.0f, 1.0f); glVertex3f( 08.0f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
-    	glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
-
+		  glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
+		  glTexCoord2f(1.0f, 0.0f); glVertex3f( 08.0f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
+		  glTexCoord2f(1.0f, 1.0f); glVertex3f( 08.0f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
+		  glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
+    
   		glEnd(); 
                 t = GLUT_BITMAP_TIMES_ROMAN_24; 
   		glColor3d(1, 0, 0);
@@ -292,10 +292,10 @@ void printMenu()
   		glBindTexture(GL_TEXTURE_2D, texture[optionTargeted]);    
   		glBegin(GL_QUADS);		                
     
-    	glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
-    	glTexCoord2f(1.0f, 0.0f); glVertex3f( 07.1f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
-    	glTexCoord2f(1.0f, 1.0f); glVertex3f( 07.1f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
-    	glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
+		  glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
+		  glTexCoord2f(1.0f, 0.0f); glVertex3f( 07.1f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
+		  glTexCoord2f(1.0f, 1.0f); glVertex3f( 07.1f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
+		  glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
 
   		glEnd(); 
                 t = GLUT_BITMAP_TIMES_ROMAN_24; 
@@ -314,10 +314,10 @@ void printMenu()
   		glBindTexture(GL_TEXTURE_2D, texture[0]);    
   		glBegin(GL_QUADS);		                
     
-    	glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
-    	glTexCoord2f(1.0f, 0.0f); glVertex3f( 10.0f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
-    	glTexCoord2f(1.0f, 1.0f); glVertex3f( 10.0f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
-    	glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
+		  glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
+		  glTexCoord2f(1.0f, 0.0f); glVertex3f( 10.0f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
+		  glTexCoord2f(1.0f, 1.0f); glVertex3f( 10.0f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
+		  glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
 
   		glEnd();
                 t = GLUT_BITMAP_TIMES_ROMAN_24; 
@@ -345,10 +345,10 @@ float j, k, n;
   glBindTexture(GL_TEXTURE_2D, texture[0]);    
   glBegin(GL_QUADS);		                
    
-  glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
-  glTexCoord2f(1.0f, 0.0f); glVertex3f( 10.0f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
-  glTexCoord2f(1.0f, 1.0f); glVertex3f( 10.0f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
-  glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
+    glTexCoord2f(0.0f, 0.0f); glVertex3f(-17.0f, -11.0f,  1.0f);	// Bottom Left Of The Texture and Quad
+    glTexCoord2f(1.0f, 0.0f); glVertex3f( 10.0f, -11.0f,  1.0f);	// Bottom Right Of The Texture and Quad
+    glTexCoord2f(1.0f, 1.0f); glVertex3f( 10.0f,  11.0f,  1.0f);	// Top Right Of The Texture and Quad
+    glTexCoord2f(0.0f, 1.0f); glVertex3f(-17.0f,  11.0f,  1.0f);	// Top Left Of The Texture and Quad
 
   glEnd();
 
@@ -429,33 +429,165 @@ int playSound(char *soundName)
 	return 0;
 }
 
-int **defMatrix(int x, int y)
+void defMatrix(int x, int y, int ***matrix) // x - width, y - height of matrix
 {
-  int row, column;
-  int i;
-  int ** matrix = (int **) malloc (x * sizeof(int *));
-  int *matrixReturn;
+  int row, column, i;
+  int ** temp = (int **)malloc(sizeof(int *) * x); // allocating memory for x
   
   for (i = 0; i < x; i++)
   {
-    matrix[i]= (double *) malloc(y * sizeof(int));
+    temp[i]= (int *) malloc(y * sizeof(int)); // allocating y*sizeof(int) for every x
   }
+  *matrix = temp;
   
-  for (row = 0; row < y; row++)
+  for (row = 0; row < x; row++)
   {
-    for (column = 0; column < x; column++)
+    for (column = 0; column < y; column++)
     {
-      if (row == 0 || row == y-1 || column == 0 || column == x-1) 
-      {
-	matrix[row][column] = 1;
-      } else 
-      {
-	matrix[row][column] = 0;
-      }
+      (*matrix)[row][column] = 0; // define every element of the matrix with 0
     }
   }
+}
+
+void showUp(int score) 
+{
+  static int cover = 11;
   
-  matrixReturn = matrix;
+  glBegin(GL_QUADS); // drawing plane which hides the pic
   
-  return matrixReturn;
+    glVertex3f(-17.0f, cover-22, 2.01f);
+    glVertex3f( 10.0f, cover-22, 2.01f);
+    glVertex3f( 10.0f,    cover, 2.01f);
+    glVertex3f(-17.0f,    cover, 2.01f);
+  
+  glEnd();
+  
+  if ((score % 10) == 0)
+  {
+    cover++;
+  }
+}
+
+int rotateObjectCheck(Object rotateThisObject, int **matrix)
+{
+  int i;
+  int container;
+  Object ObjectCopy = rotateThisObject;
+  
+  switch (ObjectCopy.numElements)
+  {
+    case 3 : // Rotate the copy object
+	     for (i = 0; i <= ObjectCopy.numElements - 2; i++)
+	     {
+	       ObjectCopy.otherPos[0][i] -= ObjectCopy.centerPos[0];
+	       ObjectCopy.otherPos[1][i] -= ObjectCopy.centerPos[1];
+	     }
+      
+	     for (i = 0; i <= ObjectCopy.numElements - 2; i++)
+	     {
+	       container = ObjectCopy.otherPos[0][i];
+	       ObjectCopy.otherPos[0][i] = -1 * ObjectCopy.otherPos[1][i];
+	       ObjectCopy.otherPos[1][i] = container;
+	     }
+	     for (i = 0; i <= ObjectCopy.numElements - 2; i++)
+	     {
+	       ObjectCopy.otherPos[0][i] += ObjectCopy.centerPos[0];
+	       ObjectCopy.otherPos[1][i] += ObjectCopy.centerPos[1];
+	     }
+	     
+	     // Check for matches
+	    
+	     /* if matrix field with coordiantes == coordinates of this squere,
+     	      * then return 1 - match found
+	      */
+	    
+	     for (i = 0; i <= ObjectCopy.numElements - 2; i++)
+	     {
+	       if (matrix[ObjectCopy.otherPos[0][i]][ObjectCopy.otherPos[1][i]] == 1) return 1;
+	     }
+	     
+      break;
+    case 4 : for (i = 0; i < ObjectCopy.numElements - 1; i++)
+	     {
+	       ObjectCopy.otherPos[0][i] -= ObjectCopy.centerPos[0];
+	       ObjectCopy.otherPos[1][i] -= ObjectCopy.centerPos[1];
+	     }
+      
+	     for (i = 0; i < ObjectCopy.numElements - 1; i++)
+	     {
+	       container = ObjectCopy.otherPos[0][i];
+	       ObjectCopy.otherPos[0][i] = -1 * ObjectCopy.otherPos[1][i];
+	       ObjectCopy.otherPos[1][i] = container;
+	     }
+	     for (i = 0; i < ObjectCopy.numElements - 1; i++)
+	     {
+	       ObjectCopy.otherPos[0][i] += ObjectCopy.centerPos[0];
+	       ObjectCopy.otherPos[1][i] += ObjectCopy.centerPos[1];
+	     }
+	     
+	     // Check for matches
+	    
+	     /* if matrix field with coordiantes == coord of this squere,
+     	      * then return 1 - match found
+	      */
+	    
+	     for (i = 0; i <= ObjectCopy.numElements - 1; i++)
+	     {
+	       if (matrix[ObjectCopy.otherPos[0][i]][ObjectCopy.otherPos[1][i]] == 1) return 1;
+	     }
+      break;
+  }
+  
+  return 0; // if there are no matches
+}
+
+Object rotateObject(Object rotateThisObject, int ***matrix)
+{
+  int i;
+  int container;
+  
+  if (rotateThisObject.type == 2) return rotateThisObject;
+  
+  if (rotateObjectCheck(rotateThisObject, matrix) == 1) return rotateThisObject; 
+  
+  switch (rotateThisObject.numElements)
+  {
+    case 3 : for (i = 0; i <= rotateThisObject.numElements - 2; i++)
+	     {
+	       rotateThisObject.otherPos[0][i] -= rotateThisObject.centerPos[0];
+	       rotateThisObject.otherPos[1][i] -= rotateThisObject.centerPos[1];
+	     }
+      
+	     for (i = 0; i <= rotateThisObject.numElements - 2; i++)
+	     {
+	       container = rotateThisObject.otherPos[0][i];
+	       rotateThisObject.otherPos[0][i] = -1 * rotateThisObject.otherPos[1][i];
+	       rotateThisObject.otherPos[1][i] = container;
+	     }
+	     for (i = 0; i <= rotateThisObject.numElements - 2; i++)
+	     {
+	       rotateThisObject.otherPos[0][i] += rotateThisObject.centerPos[0];
+	       rotateThisObject.otherPos[1][i] += rotateThisObject.centerPos[1];
+	     }
+      break;
+    case 4 : for (i = 0; i < rotateThisObject.numElements - 1; i++)
+	     {
+	       rotateThisObject.otherPos[0][i] -= rotateThisObject.centerPos[0];
+	       rotateThisObject.otherPos[1][i] -= rotateThisObject.centerPos[1];
+	     }
+      
+	     for (i = 0; i < rotateThisObject.numElements - 1; i++)
+	     {
+	       container = rotateThisObject.otherPos[0][i];
+	       rotateThisObject.otherPos[0][i] = -1 * rotateThisObject.otherPos[1][i];
+	       rotateThisObject.otherPos[1][i] = container;
+	     }
+	     for (i = 0; i < rotateThisObject.numElements - 1; i++)
+	     {
+	       rotateThisObject.otherPos[0][i] += rotateThisObject.centerPos[0];
+	       rotateThisObject.otherPos[1][i] += rotateThisObject.centerPos[1];
+	     }
+      break;
+  }
+  return rotateThisObject;
 }
