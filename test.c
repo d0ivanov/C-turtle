@@ -1,53 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int **defMatrix(int x, int y);
+#define NUMX 10
+#define NUMY 20
+
+void defMatrix(int x, int y, int ***);
 
 int main()
 {
-  int **test = defMatrix(10, 10);
+  int **test;
   int i, k;
   
+  defMatrix(NUMX, NUMY, &test);
+  
   printf("\n");
-  for (i = 0; i < 10; i++)
+  
+  for (i = 0; i < NUMX; i++)
   {
-    for (k = 0; k < 10; k++)
+    for (k = 0; k < NUMY; k++)
     {
       printf("%d", test[i][k]);
     }
     printf("\n");
   }
+  
   return 0;
 }
 
-int **defMatrix(int x, int y)
+void defMatrix(int x, int y, int ***matrix)
 {
-  int row, column;
-  int i;
-  int ** matrix = (int **) malloc (x * sizeof(int *));
-  int * matrixReturn;
-  
+  int row, column, i;
+  int ** temp = (int **)malloc(sizeof(int *) * x);
   for (i = 0; i < x; i++)
   {
-    matrix[i]= (double *) malloc(y * sizeof(int));
+    temp[i]= (int *) malloc(y * sizeof(int));
   }
+  *matrix = temp;
   
-  for (row = 0; row < y; row++)
+  for (row = 0; row < x; row++)
   {
-    for (column = 0; column < x; column++)
+    for (column = 0; column < y; column++)
     {
-      if (row == 0 || row == y-1 || column == 0 || column == x-1) 
-      {
-	matrix[row][column] = 1;
-      } else 
-      {
-	matrix[row][column] = 0;
-      }
+      (*matrix)[row][column] = 0;
     }
   }
-  
-  matrixReturn = matrix;
-  
-  return matrixReturn;
 }
-
