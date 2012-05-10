@@ -591,3 +591,93 @@ Object rotateObject(Object rotateThisObject, int ***matrix)
   }
   return rotateThisObject;
 }
+
+int moveObjectCheck(Object moveThisObject, int ***matrix, int direction)
+{
+  Object objectCopy = moveThisObject; // kopie na dadeniq kato argument obekt
+  int i;
+  
+  if (direction != 0 && direction != 1 && direction != 2) return 1; // proverka za greshni stoinosti
+  
+  switch (direction)
+  {
+    case 0 : objectCopy.centerPos[0] += 1; // dqsno
+	     for (i = 0; i < objectCopy.numElements; i++)
+	     {
+	       objectCopy.otherPos[0][i] += 1;
+	       if ((*matrix)[objectCopy.otherPos[0][i]][objectCopy.otherPos[1][i]] == 1) return 1; // nqma mqsto
+	     }
+      break;
+    case 1 : objectCopy.centerPos[0] -= 1; // lqvo
+	     for (i = 0; i < objectCopy.numElements; i++)
+	     {
+	       objectCopy.otherPos[0][i] -= 1;
+	       if ((*matrix)[objectCopy.otherPos[0][i]][objectCopy.otherPos[1][i]] == 1) return 1; // nqma mqsto
+	     }
+      break;
+    case 2 : objectCopy.centerPos[1] -= 1; // dolu
+	     for (i = 0; i < objectCopy.numElements; i++)
+	     {
+	       objectCopy.otherPos[1][i] -= 1;
+	       if ((*matrix)[objectCopy.otherPos[0][i]][objectCopy.otherPos[1][i]] == 1) return 1; // nqma mqsto
+	     }
+      break;
+  }
+  
+  
+  return 0; // ako e svobodno
+}
+
+void moveObject(Object *object, int side, int ***matrix)
+{
+  int i, n;
+  Object objectCopy = *object;
+  if(!moveObjectCheck(objectCopy, matrix, side)) return; 
+	
+  switch(side)
+  {
+    case 0: //left
+    {
+      object->centerPos[0] -= 1;
+      (*matrix)[object->centerPos[0]][object->centerPos[1]] = 1;
+      (*matrix)[ object->centerPos[0] ][ object->centerPos[1] ] = 0;
+      for( i = 0; i < object->numElements-1; i++ )
+      {
+      	object->otherPos[0][i] -= 1;
+        (*matrix)[object->otherPos[0][i]][object->otherPos[1][i]] = 0;
+      	(*matrix)[object->otherPos[0][i]][object->otherPos[1][i]] = 1;
+      }
+    }
+    break;
+		
+    case 1: //right
+    {
+      object->centerPos[0] += 1;
+      (*matrix)[ object->centerPos[0] ][ object->centerPos[1] ] = 0;
+      (*matrix)[object->centerPos[0]][object->centerPos[1]] = 1;
+      for( i = 0; i < object->numElements-1; i++ )
+      {
+      	object->otherPos[0][i] += 1;
+      	(*matrix)[object->otherPos[0][i]][object->otherPos[1][i]] = 0;
+      	(*matrix)[object->otherPos[0][i]][object->otherPos[1][i]] = 1;
+      }		
+    }
+    break;
+		
+    case 2: //down
+    {
+      object->centerPos[1] -= 1;
+      (*matrix)[ object->centerPos[1] ][ object->centerPos[1] ] = 0;
+      (*matrix)[object->centerPos[0]][object->centerPos[1]] = 1;
+      for( i = 0; i < object->numElements-1; i++ )
+      {
+      	object->otherPos[1][i] -= 1;
+        (*matrix)[object->otherPos[1][i]][object->otherPos[1][i]] = 0;
+        (*matrix)[object->otherPos[0][i]][object->otherPos[1][i]] = 1;
+      }
+    }		
+    break;
+		
+    default: return;
+  }     		
+}

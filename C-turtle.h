@@ -14,8 +14,8 @@ typedef struct
 {
   int type;
   int numElements;
-  int centerPos[2]; //centerPos[0=x / 1=y]
-  int otherPos[2][3]; // otherPos[x=0/y=1][num_of_the_square]
+  int centerPos[2];
+  int otherPos[2][3];
 } Object;
 
 extern int optionTargeted; // shows which option from the menu is targeted by the user
@@ -80,5 +80,18 @@ int rotateObjectCheck(Object rotateThisObject, int ***matrix);
 	 * Rotate the object given as argument by 90 degrees counterclockwise.
 	 */
 Object rotateObject(Object rotateThisObject, int ***matrix);
+
+        /*
+	 * Checks if the object given as argument can go to the direction given as argument.
+	 * Direction(0 - right, 1 - left, 2 - down)
+	 * Returns 1 - can't go, 0 - can go.
+	 */
+int moveObjectCheck(Object moveThisObject, int ***matrix, int direction);
+
+	/*
+	 * Moves object given as argument to the side given as argument
+	 * 0 - left, 1- right, 2 -down
+	 */
+void moveObject(Object *object, int side, int ***matrix);
 
 #endif
