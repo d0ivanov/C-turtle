@@ -64,7 +64,7 @@ int playSound(char*);
 	 * defMatrix(x, y, &matrix);
 	 */
 
-int **defMatrix(int x, int y);
+void defMatrix(int x, int y, int ***matrix);
 
 	/*
 	 * shows picture slowly.
@@ -75,10 +75,10 @@ void showup(int score);
 	 * Checks if the object given as argument can be rotated.
 	 * Returns 1 - can't be rotated, 0 - can be rotated.
 	 */
-int rotateObjectCheck(Object rotateThisObject, int **matrix);
+int rotateObjectCheck(Object rotateThisObject, int ***matrix);
 	/*
 	 * Rotate the object given as argument by 90 degrees counterclockwise.
 	 */
-int rotateObject(Object rotateThisObject, int ***matrix);
+Object rotateObject(Object rotateThisObject, int ***matrix);
 
 #endif

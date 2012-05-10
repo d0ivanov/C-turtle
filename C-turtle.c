@@ -468,7 +468,7 @@ void showUp(int score)
   }
 }
 
-int rotateObjectCheck(Object rotateThisObject, int **matrix)
+int rotateObjectCheck(Object rotateThisObject, int ***matrix)
 {
   int i;
   int container;
@@ -503,7 +503,7 @@ int rotateObjectCheck(Object rotateThisObject, int **matrix)
 	    
 	     for (i = 0; i <= ObjectCopy.numElements - 2; i++)
 	     {
-	       if (matrix[ObjectCopy.otherPos[0][i]][ObjectCopy.otherPos[1][i]] == 1) return 1;
+	       if ((*matrix)[ObjectCopy.otherPos[0][i]][ObjectCopy.otherPos[1][i]] == 1) return 1;
 	     }
 	     
       break;
@@ -533,7 +533,7 @@ int rotateObjectCheck(Object rotateThisObject, int **matrix)
 	    
 	     for (i = 0; i <= ObjectCopy.numElements - 1; i++)
 	     {
-	       if (matrix[ObjectCopy.otherPos[0][i]][ObjectCopy.otherPos[1][i]] == 1) return 1;
+	       if ((*matrix)[ObjectCopy.otherPos[0][i]][ObjectCopy.otherPos[1][i]] == 1) return 1;
 	     }
       break;
   }
