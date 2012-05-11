@@ -191,21 +191,23 @@ Object rotateObject(Object rotateThisObject)
   int i;
   int container;
   
+  if (rotateThisObject.type == 2) return rotateThisObject;
+  
   switch (rotateThisObject.numElements)
   {
-    case 3 : for (i = 0; i < rotateThisObject.numElements - 2; i++)
+    case 3 : for (i = 0; i <= rotateThisObject.numElements - 2; i++)
 	     {
 	       rotateThisObject.otherPos[0][i] -= rotateThisObject.centerPos[0];
 	       rotateThisObject.otherPos[1][i] -= rotateThisObject.centerPos[1];
 	     }
       
-	     for (i = 0; i < rotateThisObject.numElements - 2; i++)
+	     for (i = 0; i <= rotateThisObject.numElements - 2; i++)
 	     {
 	       container = rotateThisObject.otherPos[0][i];
 	       rotateThisObject.otherPos[0][i] = -1 * rotateThisObject.otherPos[1][i];
 	       rotateThisObject.otherPos[1][i] = container;
 	     }
-	     for (i = 0; i < rotateThisObject.numElements - 2; i++)
+	     for (i = 0; i <= rotateThisObject.numElements - 2; i++)
 	     {
 	       rotateThisObject.otherPos[0][i] += rotateThisObject.centerPos[0];
 	       rotateThisObject.otherPos[1][i] += rotateThisObject.centerPos[1];
