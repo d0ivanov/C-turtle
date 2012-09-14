@@ -9,7 +9,7 @@ using namespace std;
 
 class Neuron{
     private:
-    struct node{ // The Neuron contain list of poiters to his childs
+    struct node{ // The Neuron contain list of pointers to his childs
         Neuron* child;
         node* next;
     };
