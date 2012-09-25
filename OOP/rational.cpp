@@ -3,9 +3,9 @@
 using namespace std;
 
 class Rational{
-	
-	long n_;
-	long d_;
+	private:
+		long n_;
+		long d_;
 	
 	public:
 		Rational( long n, long d ){
@@ -26,6 +26,7 @@ class Rational{
 
 		void normalize(){
 			long g = gcd(n_, d_);
+			
 			if( d_ < 0 ){
 				n_ *= -1;
 				d_ *= -1;	
@@ -33,18 +34,35 @@ class Rational{
 			n_ /= g;
 			d_ /= g;	
 		}
-		
+		//n/d
 		void add(Rational r){
-			n_ *= r.d_+r.n_*d_;
+			n_ = n_*r.d_+r.n_*d_;
 			d_ *= r.d_;
 			normalize();	
 		}
 		
 		void sub(Rational r){
-			n_ *= r.d_-r.n_*d_;
+			n_ = n_*r.d_-r.n_*d_;
 			d_ *= r.d_;
 			normalize();
+			if( n_ == 0 ){
+				d_ = 0;
+			}
 		}		
+		
+		void div(Rational r){
+			n_ *= r.d_;
+			d_ *= r.n_;
+			
+			normalize();
+		}
+		
+		void mul(Rational r){
+			n_ *= r.n_;
+			d_ *= r.d_;
+			
+			normalize();
+		}
 				
 		void dump(){
 			cout << "R(" << n_ << ", " << d_ << ")" << endl;	
@@ -54,11 +72,24 @@ class Rational{
 
 int main(){
 	
-	Rational rat1(1, 2), rat2(2, 4);
-
-	rat1.add(rat2);
+	Rational rat1(1, 2), rat2(1, 4);
 	
+	cout << "add" <<endl;
+	rat1.add(rat2);
 	rat1.dump();
 	
-	return 20;	
+	cout << "subtract" << endl;
+	rat1.sub(rat2);
+	rat1.dump();
+	
+	cout << "divide" << endl;
+	rat1.div(rat2);
+	rat1.dump();
+	
+	cout << "multiply" << endl;
+	rat1.mul(rat2);
+	rat1.dump();
+	
+	
+	return 0;	
 }
