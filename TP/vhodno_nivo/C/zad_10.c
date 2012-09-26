@@ -44,14 +44,22 @@ void main(){
 			}else{
 				printf("Only 1 peace can be cut from %d square cm surface.\n", s);
 				printf("longitudinal cut will have to be on the following spot: \n");
-				printArr(coords, MAX_ARR);
+				if(coords[1] != 0){
+					printArr(coords, MAX_ARR);
+				}else{
+					printf("No longitudal cuts can be made!");
+				}
 			}
 		}
 		break;
 		default:{
 			printf("%d square cm surface can be cut into %d pcs.\n", s, plates);
 			printf("longitudinal cuts will have to be on the following spots: \n");
-			printArr(coords, MAX_ARR);
+			if(coords[1] != 0){
+					printArr(coords, MAX_ARR);
+				}else{
+					printf("No longitudal cuts can be made!");
+			}
 		}
 	}	
 }
