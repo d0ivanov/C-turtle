@@ -1,13 +1,16 @@
 #!/usr/bin/envy ruby
 
-fName = 'form.csv'
-file = File.new(fName, 'r')
+file = File.new('form.csv', 'r')
 result =  0
+bool = true
 
 file.each_line("\n") do |row|
-   columns = row.split(",")
-   result += columns[5].to_i
-   break if file.lineno >= 21
- end
+	if bool # to skip the first line (because the first line is full with strings)
+		bool = false
+	else
+		columns = row.split(",")
+		result += columns[5].to_i
+	end
+end
  
  puts result
