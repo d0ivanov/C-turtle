@@ -13,4 +13,4 @@ file.each_line("\n") do |row|
 	end
 end
  
- puts result
+puts result
