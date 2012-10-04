@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 #execute with either ruby filename.rb
 #or chmod +x filename.rb and ./filename.rb
+
+
+#TUES WAS HERE!!!!!!!!
 require "csv"
 
 def parse_csv
