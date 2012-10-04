@@ -118,150 +118,23 @@ class Rectangle{
 			}
 			return false;
 		}
-		
-		Point lineIntersect(Point p1, Point p2, Point p3, Point p4) {
-			double x1 = p1.getX(), x2 = p2.getX(), x3 = p3.getX(), x4 = p4.getX();
-			double y1 = p1.getY(), y2 = p2.getY(), y3 = p3.getY(), y4 = p4.getY();
- 			Point p(-1.0, -1.0);
-			double d = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);
-			if (d == 0) return p;
-			
-			float pre = (x1*y2 - y1*x2), post = (x3*y4 - y3*x4);
-			float x = ( pre * (x3 - x4) - (x1 - x2) * post ) / d;
-			float y = ( pre * (y3 - y4) - (y1 - y2) * post ) / d;
-				 
-		    if ( x < min(x1, x2) || x > max(x1, x2) ||
-				 x < min(x3, x4) || x > max(x3, x4) ) return p;
-			if ( y < min(y1, y2) || y > max(y1, y2) ||
-				 y < min(y3, y4) || y > max(y3, y4) ) return p;
-				 
-			p.setX(x);
-			p.setY(y);
-			return p;
-		}
-		
-		Rectangle intersect(Rectangle r){
-			//na ugul gore vlqvo
-			Point ip = lineIntersect(r.bl_, r.br_, ul_, bl_);
-			Point ip2 = lineIntersect(r.ur_, r.br_, ul_, ur_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(isInside(r.bl_) || isInside(r.br_) || isInside(r.ur_) || isInside(r.ul_))){
-				r.bl_.setX(ip.getX());
-				r.bl_.setY(ip.getY());
-				r.ur_.setX(ip2.getX());
-				r.ur_.setY(ip2.getY());
-				r.calcPoints();
-				return r;
-			}
-			//po sredata otgore
-			ip = lineIntersect(ul_, ur_, r.ul_, r.bl_);
-			ip2 = lineIntersect(ul_, ur_, r.ur_, r.br_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(isInside(r.bl_) || isInside(r.br_) || isInside(r.ur_) || isInside(r.ul_))){
-				r.ur_.setX(ip2.getX());
-				r.ur_.setY(ip2.getY());
-				r.bl_.setX(ip.getX());
-				r.bl_.setY(ip.getY());
-				r.calcPoints();
-				return r;
-			}
-			//na ugul gore vdqsno
-			ip = lineIntersect(r.ul_, r.bl_, ul_, ur_);
-			ip2 = lineIntersect(r.bl_, r.br_, ur_, br_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(isInside(r.bl_) || isInside(r.br_) || isInside(r.ur_) || isInside(r.ul_))){
-			
-				r.ur_ = ur_;
-				r.calcPoints();
-				return r;
-			}
-			//po sredata otdqsno
-			ip = lineIntersect(ur_, br_, r.ul_, r.ur_);
-			ip2 = lineIntersect(ur_, br_, r.bl_, r.br_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(isInside(r.bl_) || isInside(r.br_) || isInside(r.ur_) || isInside(r.ul_))){
-			
-				r.ur_.setX(ip.getX());
-				r.ur_.setX(ip.getY());
-				r.calcPoints();
-				return r;
-			}
-			//na ugul dolu vdqsno
-			ip = lineIntersect(ur_, br_, r.ur_, r.ul_);
-			ip2 = lineIntersect(br_, bl_, r.ul_, r.bl_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(isInside(r.bl_) || isInside(r.br_) || isInside(r.ur_) || isInside(r.ul_))){
-			
-				r.bl_.setX(ip2.getX());
-				r.bl_.setY(ip2.getY());
-				r.ur_.setX(ip.getX());
-				r.ur_.setY(ip.getY());
-				r.calcPoints();
-				return r;
-			}
-			//po sredata otdolu
-			ip = lineIntersect(br_, bl_, r.br_, r.ur_);
-			ip2 = lineIntersect(br_, bl_, r.ul_, r.bl_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(isInside(r.bl_) || isInside(r.br_) || isInside(r.ur_) || isInside(r.ul_))){
-			
-				cout << r.bl_.getX() <<r.bl_.getY()<<endl;
-				cout << r.ur_.getX() <<r.ur_.getY()<<endl;
-				r.bl_.setX(ip2.getX());
-				r.bl_.setY(ip2.getY());
-				r.calcPoints();
-				return r;
-			}
-			//na ugul dolu vlqvo
-			ip = lineIntersect(bl_, br_, r.ur_, r.br_);
-			ip2 = lineIntersect(bl_, ul_, r.ul_, r.ur_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(isInside(r.bl_) || isInside(r.br_) || isInside(r.ur_) || isInside(r.ul_))){
-			
-				r.bl_ = bl_;
-				r.calcPoints();
-				return r;
-			}
-			//po sredata otlqvo
-			ip = lineIntersect(bl_, ul_, r.bl_, r.br_);
-			ip2 = lineIntersect(bl_, ul_, r.ul_, r.ur_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(isInside(r.bl_) || isInside(r.br_) || isInside(r.ur_) || isInside(r.ul_))){
-			
-				r.bl_.setX(ip.getX());
-				r.bl_.setY(ip.getY());
-				r.calcPoints();
-				return r;
-			}
-			//presi4a na krust m/u ur i br
-			ip = lineIntersect(ur_, br_, r.ul_, r.ur_);
-			ip2 = lineIntersect(ur_, br_, r.bl_, r.br_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(!isInside(r.bl_) && !isInside(r.br_) && !isInside(r.ur_) && !isInside(r.ul_)) ){
 				
-				r.ur_.setX(ip.getX());
-				r.ur_.setY(ip.getY());
-				ip2 = lineIntersect(ul_, bl_, r.bl_, r.br_);
-				r.bl_.setX(ip2.getX());
-				r.bl_.setY(ip2.getY());
-				r.calcPoints();
-				return r;
-			}
-			//presi4a na krust m/u ul i ur
-			ip = lineIntersect(bl_, br_, r.ul_, r.bl_);
-			ip2 = lineIntersect(ul_, ur_, r.ur_, r.br_);
-			if( (ip.getX() > 0 && ip.getY() > 0) && (ip2.getX() > 0 && ip2.getY() > 0) &&
-				(!isInside(r.bl_) && !isInside(r.br_) && !isInside(r.ur_) && !isInside(r.ul_)) ){
-				r.bl_.setX(ip.getX());
-				r.bl_.setY(ip.getY());
-				r.ur_.setX(ip2.getX());
-				r.ur_.setY(ip2.getY());
-				r.calcPoints();
-				return r;
-			}
-			if( isInside(r.bl_) && isInside(r.ur_) ){
-				cout << "Dvata pravougulnika sa 1 v drug!" << endl;
-			}
+		Rectangle intersect(Rectangle r){
+			Rectangle temp(0.0,0.0,0.0,0.0);
+			Point bl(0.0, 0.0);
+			Point ur(0.0, 0.0);
+
+			bl.setX( max(bl_.getX(), r.getBl().getX()) );
+			bl.setY( max(bl_.getY(), r.getBl().getY()) );
+
+			ur.setX( min(ur_.getX(), r.getUr().getX()) );
+			ur.setY( min(ur_.getY(), r.getUr().getY()) );
+
+			temp.setBl(bl);
+			temp.setUr(ur);
+
+			return temp;
+		
 		}
 		
 		Rectangle unite(Rectangle r){
