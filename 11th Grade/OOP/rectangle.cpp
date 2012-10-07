@@ -112,46 +112,13 @@ class Rectangle{
 		
 		Rectangle rectUnion(Rectangle r){
 			Rectangle temp(0,0,0,0);
-			Point points[8], bl, ur;
-			Point br_, ul_;
-			Point rbr_, rul_;
+			Point bl, ur;
 			
-			rbr_.setX(r.getUr().getX());
-			rbr_.setY(r.getBl().getY());
-			rul_.setX(r.getBl().getX());
-			rul_.setY(r.getUr().getY());
+			bl.setX( min(bl_.getX(), r.getBl().getX()) );
+			bl.setY( min(bl_.getY(), r.getBl().getY()) );
 			
-			br_.setX(ur_.getX());
-			br_.setY(bl_.getY());
-			ul_.setX(bl_.getX());
-			ul_.setY(ur_.getY());
-			
-			points[0] = bl_;
-			points[1] = br_;
-			points[2] = ur_;
-			points[3] = ul_;
-			
-			points[4] = r.bl_;
-			points[5] = rbr_;
-			points[6] = r.ur_;
-			points[7] = rul_;
-			
-			bl = points[0];
-			ur = points[0];
-			for (int i = 0; i < 7; i++){
-				if (bl.getX() > points[i].getX()){
-					bl.setX(points[i].getX());
-				}
-				if (bl.getY() > points[i].getY()){
-					bl.setY(points[i].getY());
-				}
-				if (ur.getX() < points[i].getX()){
-					ur.setX(points[i].getX());
-				}
-				if (ur.getY() < points[i].getY()){
-					ur.setY(points[i].getY());
-				}
-			}
+			ur.setX( max(ur_.getX(), r.getUr().getX()) );
+			ur.setY( max(ur_.getY(), r.getUr().getY()) );
 			
 			temp.setBl(bl);
 			temp.setUr(ur);
