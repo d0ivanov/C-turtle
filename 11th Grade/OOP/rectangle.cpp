@@ -109,6 +109,55 @@ class Rectangle{
 			
 			return temp;
 		}
+		
+		Rectangle rectUnion(Rectangle r){
+			Rectangle temp(0,0,0,0);
+			Point points[8], bl, ur;
+			Point br_, ul_;
+			Point rbr_, rul_;
+			
+			rbr_.setX(r.getUr().getX());
+			rbr_.setY(r.getBl().getY());
+			rul_.setX(r.getBl().getX());
+			rul_.setY(r.getUr().getY());
+			
+			br_.setX(ur_.getX());
+			br_.setY(bl_.getY());
+			ul_.setX(bl_.getX());
+			ul_.setY(ur_.getY());
+			
+			points[0] = bl_;
+			points[1] = br_;
+			points[2] = ur_;
+			points[3] = ul_;
+			
+			points[4] = r.bl_;
+			points[5] = rbr_;
+			points[6] = r.ur_;
+			points[7] = rul_;
+			
+			bl = points[0];
+			ur = points[0];
+			for (int i = 0; i < 7; i++){
+				if (bl.getX() > points[i].getX()){
+					bl.setX(points[i].getX());
+				}
+				if (bl.getY() > points[i].getY()){
+					bl.setY(points[i].getY());
+				}
+				if (ur.getX() < points[i].getX()){
+					ur.setX(points[i].getX());
+				}
+				if (ur.getY() < points[i].getY()){
+					ur.setY(points[i].getY());
+				}
+			}
+			
+			temp.setBl(bl);
+			temp.setUr(ur);
+			
+			return temp;
+		}
 
 		void setBl(Point p){
 			bl_.setX(p.getX());
@@ -140,12 +189,18 @@ int main() {
 	Rectangle r(2, 0, 2, 2);
 	Rectangle rRes(0, 0, 0, 0);
 	
+	cout << "Rectangle made from intersection: " << endl << endl;
 	rRes = R.intersect(r);
 	if (R.getBl().getX() == 0 && R.getUr().getX() == 0){
 		cout << "Bad coordinates, bad coordinates. No matching found." << endl;
 	}else {
 		rRes.dump();
 	}
-
+	
+	cout << endl << "Rectangle made from uniting: " << endl << endl;
+	
+	rRes = R.rectUnion(r);
+	rRes.dump();
+	
 	return 0;	
 }
