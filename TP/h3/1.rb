@@ -1,3 +1,10 @@
+#school - ТУЕС
+#class - 11Б
+#num - 15
+#name - Добромир Иванов
+#task - Да се създаде програма, която обработва CSV файл и изкарва на стандартния изход общия брой решени задачи на
+#определените езици. 
+
 #!/usr/bin/env ruby
 #execute with either ruby filename.rb
 #or chmod +x filename.rb and ./filename.rb
