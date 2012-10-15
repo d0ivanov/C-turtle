@@ -1,10 +1,9 @@
-/*
 #school - ТУЕС
 #class - 11Б
 #num - 22
 #name - Михаил Михайлов Здравков
 #task - Програма за "пъхане" на хора в самолет.
-*/
+
 #!/usr/bin/envy ruby
 
 class Plane
