@@ -2,7 +2,7 @@
 
 class Plane
 	
-	@seats = Array.new(6) {|i| Array.new(27){|i| 0}}
+	$seats = Array.new(6) {|i| Array.new(27){|i| 0}}
 	 
 	 def add(passengers)
 	 	r = Array.[](0, 0) 
@@ -11,9 +11,9 @@ class Plane
 		row = r[1]
 		puts "Group of "+passengers.to_s + " arrives."
 		if r[1] >= 0
-			for i in 0..passengers
+			for i in 0...passengers
 				puts "	Seat " + seatToReadable(seat, row) + " taken."
-				@seats[seat][row] = 1
+				$seats[seat][row] = 1
 				seat+= 1
 			end
 		else
@@ -22,9 +22,9 @@ class Plane
 	 end
 	 
 	 def printSeats()
-	 	for i in 0..27
-			for j in 0..6
-				puts @seats[j][i]
+	 	for i in 0...27
+			for j in 0...6
+				puts $seats[j][i]
 				if j == 2 
 					puts "|  |"
 				end
@@ -36,7 +36,7 @@ class Plane
 	 def planeFull()
 	 	for i in 0...27
 			for j in 0...6
-				if @seats[j][i] == 0
+				if $seats[j][i] == 0
 					return true
 				end
 			end
@@ -54,18 +54,18 @@ class Plane
 	 def findSeat(passengers)
 	 	seat = Array.[](-1, -1)
 	 	 
-		for i in 0..27 
-			for j in 0..6
+		for i in 0...27
+			for j in 0...6
 				case passengers
 					when 1
-						if @seats[j][i] == 0
+						if $seats[j][i] == 0
 							seat[0] = j 
 							seat[1] = i
 							return seat
 						end
 					when 2
 						if j + passengers <= 6 && !toTrail(j)
-							if seats[j][i] == 0 && seats[j+1][i] == 0
+							if $seats[j][i] == 0 && $seats[j+1][i] == 0
 								seat[0] = j
 								seat[1] = i
 								return seat
@@ -73,7 +73,7 @@ class Plane
 						end
 					when 3
 						if j + passengers <= 6 && !toTrail(j)
-							if seats[j][i] == 0 && seats[j+1][i] == 0 && seats[j+2][i] == 0
+							if $seats[j][i] == 0 && $seats[j+1][i] == 0 && $seats[j+2][i] == 0
 								seat[0] = j
 								seat[1] = i
 								return seat
