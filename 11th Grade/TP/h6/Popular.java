@@ -57,7 +57,7 @@ public class Popular {
 		Person[] people = new Person[29];
 		for(int i = 0; i < people.length; i++)
    	 	{
-        		people[i] = new Person();
+        		people[i] = new Person(i+1);
    		}
    		
 		BufferedReader CSV = new BufferedReader(new FileReader("csvs/1.csv"));;
@@ -69,25 +69,38 @@ public class Popular {
 			}
 			
 			CSV = new BufferedReader(new FileReader("csvs/" + (i + "") + ".csv"));
-			String dataRow = CSV.readLine();
+			
+			String[] dataArray = new String[30];
+			for (int k = 0; k < 30; k++){
+				dataArray[k] = CSV.readLine();
+			}
 			
 			for (int j = 0; j < 30; j++) {
-				people[Integer.parseInt(dataRow)].writtenPP();
-				System.out.println(people[Integer.parseInt(dataArray[j])].getWritten());
-				if (j > 0){
-					people[Integer.parseInt(dataArray[j])].setFrom(Integer.parseInt(dataArray[j-1]));
-				}
-				if (j + 1 < dataArray.length){
-					people[Integer.parseInt(dataArray[j])].setTo(Integer.parseInt(dataArray[j+1]));
-				}
+				people[Integer.parseInt(dataArray[j]) - 1].writtenPP();
+//				if (j > 1){
+//					people[Integer.parseInt(dataArray[j]) - 1].setFrom(Integer.parseInt(dataArray[j-2]));
+//				}
+//				if (j + 1 < 28){
+//					people[Integer.parseInt(dataArray[j])].setTo(Integer.parseInt(dataArray[j+1]));
+//				}
 			}
 		}
 		
 		CSV.close();
 		
-//		for (int i = 0; i < people.length; i++){
+		int max[] = {0, 0};
+		int min[] = {0, 0};
+		for (int i = 0; i < people.length; i++){
 //			System.out.println("Number " + i + ": ");
-//			System.out.println(people[i].getWritten());
+			System.out.println(i+1 + ": " + people[i].getWritten());
+			if (max[1] < people[i].getWritten()){
+				max[0] = i;
+				max[1] = people[i].getWritten();
+			}
+			if (min[1] >= people[i].getWritten()){
+				min[0] = i;
+				min[1] = people[i].getWritten();
+			}
 //			System.out.println();
 //			for (int j = 0; j < people.length; j++){
 //				System.out.printf("%d ", people[i].getFrom(j));
@@ -96,6 +109,9 @@ public class Popular {
 //				System.out.printf("%d ", people[i].getFrom(j));
 //			}
 //			System.out.println();
-//		}
+		}
+		
+		System.out.println("Max: " + (max[0]+1) + " with " + max[1]);
+		System.out.println("Min: " + (min[0]+1) + " with " + min[1]);
 	}
 }
