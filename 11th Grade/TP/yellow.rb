@@ -6,7 +6,7 @@ y = Array.new(50) {0}
 x = Array.new(50) {0}
 i = 0
 
-CSV.foreach("rand.csv") do |row| 
+CSV.foreach(name) do |row| 
 	if row[1].to_i != 0 
 		y[i] = rand() % row[1].to_i/2
 	end
