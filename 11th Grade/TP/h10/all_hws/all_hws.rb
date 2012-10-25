@@ -12,7 +12,7 @@ class Student
 	def getName; return @name; end
 	def getEmail; return @email; end
 	def getBelt; return @belt; end
-	def getRepo(); return @repo; end
+	def getRepo; return @repo; end
 	def setClas(val); @clas = val; end
 	def setNumber(val); @number = val; end
 	def setName(val); @name = val; end
@@ -29,12 +29,7 @@ class Student
 	end
 	
 	def simplifyClas
-		@clas = @clas.delete "1"
-		@clas = @clas.delete "0"
-		@clas = @clas.delete "-"
-		@clas = @clas.delete " "
-		@clas = @clas.delete "X"
-		@clas = @clas.delete "I"
+		@clas = @clas.delete "10- XI"
 		if @clas[0] == 97; @clas = "А"; end # if small english 'a'
 		if @clas[0] == 98; @clas = "Б"; end # if small english 'b'
 		if @clas[0] == 65; @clas = "А"; end # if capital english 'A'
