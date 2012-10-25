@@ -12,7 +12,7 @@ class Student
 	def getName; return @name; end
 	def getEmail; return @email; end
 	def getBelt; return @belt; end
-	def getRepo(); return @repo; end
+	def getRepo; return @repo; end
 	def setClas(val); @clas = val; end
 	def setNumber(val); @number = val; end
 	def setName(val); @name = val; end
