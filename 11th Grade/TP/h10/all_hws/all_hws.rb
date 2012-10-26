@@ -29,13 +29,13 @@ class Student
 	end
 	
 	def simplifyClas
-		@clas = @clas.delete "10- XI"
-		if @clas[0] == 97; @clas = "А"; end # if small english 'a'
-		if @clas[0] == 98; @clas = "Б"; end # if small english 'b'
-		if @clas[0] == 65; @clas = "А"; end # if capital english 'A'
-		if @clas[0] == 66; @clas = "Б"; end # if capital english 'B'
-		if @clas[1] == 176;	@clas = "А"; end # if small bulgarian "a"
-		if @clas[1] == 177;	@clas = "Б"; end #if small bulgarian "б"
+		@clas = @clas.delete("0-9 XI-")
+		@clas = "А" if @clas.index('a') != nil
+		@clas = "Б" if @clas.index('b') != nil
+		@clas = "А" if @clas.index('A') != nil
+		@clas = "Б" if @clas.index('B') != nil
+		@clas = "А" if @clas.index('а') != nil
+		@clas = "Б" if @clas.index('б') != nil
 	end
 end
 
@@ -130,6 +130,23 @@ for i in 1..9
 	end
 end
 
+def translate(string)
+	h = Hash['a', 'а', 'b', 'б', 'c', 'ц', 'd', 'д', 'e', 'е', 'f', 'ф', 'g', 'г', 
+	'h', 'х', 'i', 'и', 'j', 'й', 'k', 'к', 'l', 'л', 'm', 'м', 'n', 'н', 'o', 'о', 
+	'p', 'п', 'q', 'я', 'r', 'р', 's', 'с', 't', 'т', 'u', 'у', 'v', 'в', 'w', 'в',
+	'x', 'кс', 'y', 'й', 'z', 'з', 'ya', 'я', 'yu', 'ю', 'ja', 'я' ]
+	string = string.downcase
+	h.each_pair do |i, v|
+		for j in 0...string.length
+			index = string.index(i)
+			string = string.sub(i, '')
+			string = string.insert(index, v) if index != nil
+		end
+	end
+	
+	return string
+end
+
 for i in 0...studentsNum
 	students[i].simplifyClas
 end
@@ -202,6 +219,7 @@ for i in 0...studentsNum # sort by number
 end
 
 for i in 0...studentsNum
+	students[i].setName(translate(students[i].getName))
 	print i, ": "
 	students[i].dump
 end
