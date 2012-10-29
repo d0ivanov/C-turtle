@@ -1,0 +1,529 @@
+Клас,номер,име,поща,колан,номер на домашно,заглавие на домашното,"краен срок, дата на предаване",предадено ли е на време,връзки към решените задачи
+Б,16,Едуард Федев Калфов,edward.kalfov@abv.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://bitbucket.org/TheScouser/python
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://bitbucket.org/TheScouser/python/src/aae9f6e59dda/version_control_homework
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/TheScouser/python/src/35748424d5ad/version_control_homework
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://bitbucket.org/TheScouser/python/src/f1040c370be5/View_homework.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://bitbucket.org/TheScouser/python/src/8c07b70ff579/Homework/h5/Homework5.java?at=default
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://bitbucket.org/TheScouser/python/src/ee418dbab2af/Homework/h6/AirPlane.java?at=default https://bitbucket.org/TheScouser/python/src/ee418dbab2af/Homework/h6/Airplane.rb?at=default
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://bitbucket.org/TheScouser/python/src/3502f2fcc2d4296fe46f9958f2cda9efe1984746/Homework/h7/Homework7.rb?at=default
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://ekalfov.wordpress.com/2012/10/19/how-to-make-your-own-repository/
+,,,,
+Б,27,Тодор Руменов Маноилов,tmanoilov@abv.bg,
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/fear-sfx/TP
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/fear-sfx/TP/blob/master/homeworks.rb
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/fear-sfx/TP/blob/master/csv_langs2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/fear-sfx/TP/blob/master/repo_status.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/fear-sfx/TP/blob/master/h5/Intro.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/fear-sfx/TP/blob/master/h6/AirPlanes.java https://github.com/fear-sfx/TP/blob/master/h6/AirPlanes.rb
+,,,,
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://fearsfx.wordpress.com/2012/10/22/version-control-systems-vcs-github/
+,,,,
+Б,22,Михаил Михайлов Здравков,mihail0zdravkov@gmail.com,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/wintre/C-turtle
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/wintre/C-turtle/blob/master/11th%20Grade/TP/csv.rb
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/wintre/C-turtle/blob/master/11th%20Grade/TP/csv2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/wintre/C-turtle/blob/master/11th%20Grade/TP/repoScreen.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/wintre/C-turtle/blob/master/11th%20Grade/TP/h4/HW4.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/wintre/C-turtle/blob/master/11th%20Grade/TP/h5/Plane.java https://github.com/wintre/C-turtle/blob/master/11th%20Grade/TP/h5/plane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/wintre/C-turtle/blob/master/11th%20Grade/TP/h6/Popular.java
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://indjikiplyactor.blogspot.com/2012/10/working-with-github-through-terminal.html
+,,,,
+Б,18,Иван Венциславов Пейчинов,ipeychinov@gmail.com,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/quattrobg/TP
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/quattrobg/TP/blob/master/homeworkruby.rb
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/quattrobg/TP/blob/master/homeworkruby2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/quattrobg/TP/blob/master/RepoStatus.PNG
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/quattrobg/TP/blob/master/H4/JavaPropertyHomework.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/quattrobg/TP/blob/master/H5/AirPlane.java https://github.com/quattrobg/TP/blob/master/H5/SameThing.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/quattrobg/TP/blob/master/H6/1.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://ipeychinov.wordpress.com/2012/10/22/github-how-to/
+,,,,
+Б,20,Красимир Светославов Стойков,Krasimir.Stojkov@gmail.com,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/lukistar/Discworld
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/lukistar/Discworld/blob/master/Homework2.py
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/lukistar/Discworld/blob/master/Homework3.py
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/lukistar/Discworld/blob/master/TP/The_Most_Terrible_Homework_Ever.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/lukistar/Discworld/tree/master/TP/h5
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/lukistar/Discworld/blob/master/TP/h6/AirPlane.java https://github.com/lukistar/Discworld/blob/master/TP/h6/air.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/lukistar/Discworld/blob/master/TP/h7/famous.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://lukistar.wordpress.com/
+,,,,
+Б,10,Георги Миленов Цанев,gbdrock@abv.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/mBlack95/12
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/mBlack95/12/blob/master/csv_homework.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,http://cloud.github.com/downloads/mBlack95/tues/Screenshot.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/mBlack95/tues/blob/master/h5/HomeWork2.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/mBlack95/tues/blob/master/h6/AirPlane.java https://github.com/mBlack95/tues/blob/master/h6/AirPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/mBlack95/tues/blob/master/h7/count.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,https://georgitsanev.wordpress.com/
+,,,,
+Б,15,Добромир Огнянов Иванов,syliconsynapse@gmail.com,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/starbust/C-turtle/tree/master/TP
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/starbust/C-turtle/blob/master/TP/parseCSV.rb
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/starbust/C-turtle/blob/master/TP/parseCSV.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/starbust/C-turtle/raw/master/TP/Screenshot-2012-10-10%2021%3A54%3A30.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/starbust/C-turtle/blob/master/TP/h4/JVMProperties.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/starbust/C-turtle/blob/master/TP/h5/PlaneSeats.java https://github.com/starbust/C-turtle/blob/master/TP/h5/PlaneSeats.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/starbust/C-turtle/blob/master/TP/h6/mostPopular.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://epicdomain.blogspot.com/2012/10/how-to-create-your-own-git-repository.html
+,,,,
+Б,6,Божидар Ивов Гьорев,b.giorev@gmail.com,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/bgiorev/tuestech
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/bgiorev/tuestech/blob/master/mycsv.py
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/bgiorev/tuestech/blob/master/mycsv_new.py
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://raw.github.com/bgiorev/tuestech/master/Bojidar_Giorev_Repository.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/bgiorev/tuestech/blob/master/h5/CommandLine.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/bgiorev/tuestech/blob/master/h6/AirPlane.java https://github.com/bgiorev/tuestech/blob/master/h6/AirPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/bgiorev/tuestech/blob/master/h7/1.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://bgiorev.wordpress.com/2012/10/22/how-to-use-github-tutorial/
+,,,,
+Б,11,Даниел Николаев Георгиев,daniel.georgiev95@gmail.com,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/subscribe01
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/subscribe01/TP/blob/master/CVS%20homework/csv_homework2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/subscribe01/TP/blob/master/repository.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/subscribe01/TP/blob/master/H5/Homework1.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/subscribe01/TP/blob/master/H6/Airplane.java https://github.com/subscribe01/TP/blob/master/H6/Airplane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/subscribe01/TP/blob/master/H7/popular.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://danielgeorgiev01.wordpress.com/2012/10/22/how-to-use-git-and-make-first-and-second-commit-to-github/
+,,,,
+Б,23,Николай Николаев Иванов,wwwnik@abv.bg,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://bitbucket.org/anakincho/vhodno2
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://bitbucket.org/anakincho/vhodno2
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/anakincho/vhodno2/src/9921a6f24810/csv_homework.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://bitbucket.org/anakincho/vhodno2/src/9b349038a473/screen.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://bitbucket.org/anakincho/vhodno2/src/4641c40f21ec/h5?at=default
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://bitbucket.org/anakincho/vhodno2/src/fe8d5ba4b925/h6/AirPlane.java?at=default https://bitbucket.org/anakincho/vhodno2/src/fe8d5ba4b925/h6/AirPlane1.rb?at=default
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://bitbucket.org/anakincho/vhodno2/src/03e54ba9bf186b020acbeed4193c91f4c86b67a4/h7/class.rb?at=default
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://www.4shared.com/get/dCUF7pTy/tutorial.html
+,,,,
+Б,28,Христо Георгиев Георгиев,hristogg1@abv.bg,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/hristogg1/TP
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/hristogg1/Homework/blob/master/RubyTest.rb
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/hristogg1/Ruby
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/hristogg1/TP/blob/master/Test.PNG
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/hristogg1/TP/blob/master/H5/JavaProperties.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/hristogg1/TP/blob/master/H6/AirPlane.java https://github.com/hristogg1/TP/blob/master/H6/AirPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/hristogg1/TP/blob/master/H7/Counting.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://hristomix.wordpress.com/
+,,,,
+Б,14,Димитър Антонов Борисов,dimitar.borisov@mail.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://dborisov@bitbucket.org/dborisov/programs
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://bitbucket.org/dborisov/programs/src/abd5335287a1/reading_from_csv.py
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/dborisov/programs/src
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://bitbucket.org/dborisov/programs/src/35b9a5e58fa6/Pictures/Pic.png#
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://bitbucket.org/dborisov/programs/src/fa9965ed17f4/h5/HomeWorkOne.java?at=default
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://bitbucket.org/dborisov/programs/src/edef4e07a669/h6/AirPlane1.java?at=default https://bitbucket.org/dborisov/programs/src/edef4e07a669/h6/AirPlane1.rb?at=default
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://bitbucket.org/dborisov/programs/src/b8d1f47dabbc9c3c83085664b69e49bade85abc3/h7/1.rb?at=default
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://dimitarborisov.wordpress.com/2012/10/21/how-to-work-with-mercurial-en/
+,,,,
+Б,9,Георги Евгениев Кръчков,georgi_kratchkov@abv.bg,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/Georgi-Kratchkov/Homework_1
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/Georgi-Kratchkov/Homework_1/commit/3d7c50d544e1f8509ec89986127e89835b71d313
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/Georgi-Kratchkov/Homework_1/blob/master/Summation.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/Georgi-Kratchkov/TP/blob/master/h4/Picture.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/Georgi-Kratchkov/TP/tree/master/h5
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/Georgi-Kratchkov/TP/blob/master/h6/AirPlane.java https://github.com/Georgi-Kratchkov/TP/blob/master/h6/AirPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/Georgi-Kratchkov/TP/blob/master/h7/Counting.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://fhercus.wordpress.com/2012/10/22/how-to-work-with-version-control-system-in-ubuntu-how-to-clone-github-repository-how-to-push-repository-to-github-how-to-transfer-all-changes-you-are-making-into-github-how-to-get-those-changes-f/
+,,,,
+А,11,Диана Марио Бояджиева,didsito13@abv.bg,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://bitbucket.org/dboyadjieva/homework
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,-
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/dboyadjieva/homework/downloads/project.rb
+,,,,
+,,,,
+,,,,
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://bitbucket.org/dboyadjieva/homework/downloads/student.rb
+,,,,
+,,,,
+А,10,Денис Евгениев Николов,denisnikolow@gmail.com,
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/denisnikolow/Denis11a
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,-
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/denisnikolow/Denis11a/blob/master/csv_homework.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/denisnikolow/Denis11a/blob/master/h5/progress.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/denisnikolow/Denis11a/blob/master/h6/HomeWork1.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/denisnikolow/Denis11a/blob/master/h7/AirPlane.java https://github.com/denisnikolow/Denis11a/blob/master/h7/AirPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/denisnikolow/Denis11a/blob/master/h8/1.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,https://github.com/denisnikolow/Denis11a/blob/master/h9/1.pdf
+,,,,
+А,27,Стефан Юлиянов Петров,spetrov123@yahoo.com,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/spetrov123/Programming
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/spetrov123/Programming/blob/master/csv_hw1.rb
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/spetrov123/Programming/blob/master/csv_hw2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/spetrov123/Programming/blob/master/repository_condition.png
+,,,,
+,,,,
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/spetrov123/Programming/blob/master/h7/1.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://spetrov123.wordpress.com/2012/10/22/github-tutorial/
+,,,,
+А,25,Пламен Христов Никифоров,plamenxr@mail.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/PlamenNikifor/Programs/commit/7152d8ded46995b4d70bccd8c5aa6a4e40eef7d6
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,-
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/PlamenNikifor/Programs/blob/master/homework2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,http://cloud.github.com/downloads/PlamenNikifor/Programs/h5.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/PlamenNikifor/Programs/blob/master/homework6/JavaHomework1.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/PlamenNikifor/Programs/tree/master/homework7 https://github.com/PlamenNikifor/Programs/tree/master/homework7
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/PlamenNikifor/Programs/blob/master/homework8/Numbers1.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://plamennikiforov.blogspot.com/
+,,,,
+А,22,Николай Тихомиров Коцев,Nikolay_Kotzev@abv.bg,
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/Hadescho/Prog_tech
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/Hadescho/Prog_tech/tree/master/Homework2
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/Hadescho/Prog_tech/blob/master/Homework3/homeworkcsv.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/Hadescho/Tech/blob/master/h5/1.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/Hadescho/Tech/blob/master/h6/sysProp.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/Hadescho/Tech/blob/master/h7/planePlan.java https://github.com/Hadescho/Tech/blob/master/h7/planePlane1.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/Hadescho/Tech/blob/master/h8/1.rb
+,,,,
+,,,,
+А,17,Мартин Красимиров Кирилов,marti_kirilov@abv.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/Martinski95/ProgrammingTechnology1task.git
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/Martinski95/ProgrammingTechnology1task/blob/master/csvcount.py
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/Martinski95/ProgrammingTechnology1task/blob/master/csv_homework2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/Martinski95/ProgrammingTechnology1task/blob/master/h5/1.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/Martinski95/ProgrammingTechnology1task/blob/master/h6/SystemProperties.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/Martinski95/ProgrammingTechnology1task/blob/master/h7/AirPlane.java https://github.com/Martinski95/ProgrammingTechnology1task/blob/master/h7/AirPlane.py
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/Martinski95/ProgrammingTechnology1task/blob/master/h8/1.py
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://martikirilov.wordpress.com/2012/10/22/github-tutorial/
+,,,,
+А,6,Васил Ясенов Божурски,slightremorse@gmail.com,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/slightremorse/vaskosbox
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,www.github.com/slightremorse/vaskosbox
+,,,,
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://raw.github.com/SlightRemorse/VaskosBox/master/h5/repositorypic.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/SlightRemorse/VaskosBox/blob/master/h6/HomeWork1.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://raw.github.com/SlightRemorse/VaskosBox/master/h7/Planes.java https://raw.github.com/SlightRemorse/VaskosBox/master/h7/1.py
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://raw.github.com/SlightRemorse/VaskosBox/master/h8/1.py
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://vaskosbox.blogspot.com/
+,,,,
+А,12,Иван Мирославов Манев,iwanmanew@yahoo.com,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://imanew@bitbucket.org/imanew/my-homework
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,-
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://imanew@bitbucket.org/imanew/ruby-public
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/iwanmanew/elsys/blob/master/h5/Screenshot.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/iwanmanew/elsys/blob/master/h6/HomeWork1.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/iwanmanew/elsys/blob/master/h7/AirPlane.java https://github.com/iwanmanew/elsys/blob/master/h7/AirPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/iwanmanew/elsys/blob/master/h8/12.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://mylifemyblogg.wordpress.com/2012/10/22/27/
+,,,,
+А,13,Иван-Васил Тодоров Генев,ivanvasilgenev@abv.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/shizhi1/Programii/commit/c0fcac2a624ce2c950baf39c2455dac75bd5c891
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,-
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/shizhi1/Programii/blob/master/KirilMtovPythonHW2.py
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,http://cloud.github.com/downloads/shizhi1/Programii/h5.png
+,,,,
+,,,,
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/shizhi1/Programii/blob/master/h8/MostPopular.py
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://ivanvasilgenev.blog.com/2012/10/22/how-to-use-git-via-the-terminal/
+,,,,
+А,7,Владимир Ангелов Ангелов,triedgeai@gmail.com,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://github.com/TriEdgeAI/elsys.git
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/TriEdgeAI/elsys/tree/master/csv
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/TriEdgeAI/elsys/blob/master/csv/csv.py
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/TriEdgeAI/elsys/blob/master/h5/1.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/TriEdgeAI/elsys/blob/master/h6/CommandLineParams.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/TriEdgeAI/elsys/blob/master/h7/PlaneView.java https://github.com/TriEdgeAI/elsys/blob/master/h7/1.py
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/TriEdgeAI/elsys/blob/master/h8/1.cpp
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://grayshift.net/Thread-Linux-%D0%98%D0%B7%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-GitHub-%D0%BF%D1%80%D0%B5%D0%B7-Terminal
+,,,,
+А,14,Кристин Христова Найденова,cnaydenova@gmail.com,
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://bitbucket.org/cnaydenovaa/school
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/cnaydenovaa/python/changeset/aea1121edb810f34c6fcf5cd4d65704522a19aca
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://bitbucket.org/cnaydenovaa/myrepository/src/561789efee8a/h4/Screenshot.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://bitbucket.org/cnaydenovaa/myrepository/changeset/0d7aab2879c61c1d1d850c3906d743644c66d6db
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://bitbucket.org/cnaydenovaa/myrepository/src/5639de8d1acb/h7/AirPlane.java?at=default https://bitbucket.org/cnaydenovaa/myrepository/src/5639de8d1acb/h7/Airplane.rb?at=default
+,,,,
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://christinenaydenova.wordpress.com/2012/10/22/28/
+,,,,
+А,8,Георги Динков Нейчев,georgi__neichev@abv.bg,
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,-
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,-
+,,,,
+,,,,
+,,,,
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/georgi95/homework/blob/master/hw6/AirPlane.java -
+,,,,
+,,,,
+,,,,
+А,,Николай Емилов Стоянов,nikolai_stoaynov@abv.bg,
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,-
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+А,15,Любослав Димитров Йорданов,liuboslav_jordanov@mail.bg,Бял
+,,,,
+2,Направени първоначални хранилища с качени задачи,10/2/2012 10:50:00,,https://bitbucket.org/crazybubo/ychilishte/downloads
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/crazybubo/ychilishte/downloads/Script.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/crazybubo/HomeWork/blob/master/HW3/New%20Picture.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/crazybubo/HomeWork/blob/master/HW4/1.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/crazybubo/HomeWork/blob/master/HW5/AirPlaneBig.java Не успях да я реализирам.
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/crazybubo/HomeWork/blob/master/HW6/popular.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://forums.data.bg/index.php?showtopic=2104201
+,,,,
+Б,1,Александър Атнасов Осенов,sonico@abv.bg,
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/Alexxx888/Programs/blob/master/alex.py
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+Б,3,Анна-Мария Верева Матейна,any333@abv.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+,,,,
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/any333/files-c/blob/master/csv.py
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/any333/files-c/blob/master/csv%2B.py
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/any333/TP/blob/master/Anna-Mariya_Mateyna_repository.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/any333/TP/blob/master/h5/Version.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/any333/TP/blob/master/h6/AirPlane.java https://github.com/any333/TP/tree/master/h6
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/any333/TP/blob/master/h7/1.rb
+,,,,
+,,,,
+А,23,Николай Христов Божков,nikolatbojkov95@gmail.com,
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/nbojkov/homework/downloads/csv_reader_1_1.py
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+А,28,Филип Мостафа ,filip_mos@abv.bg,
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/filip_mos/programi/changeset/1be59f06f072188828a8a7d1339b3971
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+Б,19,Йоан Методиев Марков,bubobuboster@gmail.com,Бял
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/Meritas/PT_homeworks/blob/master/h2/6th_col.py
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,http://img692.imageshack.us/img692/3388/picnbx.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/Meritas/PT_homeworks/blob/master/h3/MainClass.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/Meritas/Programming/blob/master/AirPlane.java https://github.com/Meritas/PT_homeworks/blob/master/h4/airPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/Meritas/PT_homeworks/blob/master/h5/CSV_reader.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://markoffy.wordpress.com/2012/10/22/3/
+,,,,
+Б,12,Даниела Яворова Алексова,daniela.aleksova95@abv.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/Daniela666/TP-CSV/blob/master/Zadacha2-CSV.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/DAleksova666/TP/blob/master/1.PNG
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/DAleksova666/TP/blob/master/h4/SistemProperties.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/DAleksova666/TP/blob/master/h5/AirPlane.java https://github.com/DAleksova666/TP/blob/master/h5/AirPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/DAleksova666/TP/blob/master/h6/MostPopular.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://bunnzy666.wordpress.com/2012/10/22/version-control-system/
+,,,,
+Б,17,Ива Йорданова Добрева,iva95dobreva@gmail.com,Бял
+,,,,
+,,,,
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://github.com/IvaDobreva/TP/blob/master/Ruby/csv_homework_ver2.rb
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/IvaDobreva/TP/blob/master/Ruby/csv_homework_ver2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/IvaDobreva/TP/blob/master/Iva_Dobreva_Repository.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/IvaDobreva/TP/blob/master/c5/Commandline_H.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/IvaDobreva/TP/blob/master/h6/AirPlane.java -
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/IvaDobreva/TP/blob/master/h7/numbers.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://ivadobrevablog.wordpress.com/2012/10/22/github-tutorial/
+,,,,
+Б,8,Виктор Георгиев Стоянов,v_g_stojanov@abv.bg,Бял
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/powerworr/Ruby/blob/master/read_csv.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/powerworr/TP/blob/master/repo.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/powerworr/TP/blob/master/C5/HomeWork1.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/powerworr/TP/blob/master/H6/AirPlane.java https://github.com/powerworr/TP/blob/master/H6/AirPlane_ruby.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/powerworr/TP/blob/master/H7/Count.java
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://powerworr.wordpress.com/2012/10/19/how-to-use-github-ubuntu/
+,,,,
+Б,5,Благовест Николаев Божинов,warcraft2005@abv.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/KypaB/TP/blob/master/Ruby2.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/KypaB/TP2/blob/master/Screenshot.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/KypaB/TP2/blob/master/h5/Java.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/KypaB/TP2/blob/master/h6/AirPlane.java https://github.com/KypaB/TP2/blob/master/h6/AirPlane.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/KypaB/TP2/blob/master/h7/1.rb
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://kypab.blogspot.com/
+,,,,
+Б,25,Петър Георгиев Нетовски,petarnet@abv.bg,Бял
+,,,,
+,,,,
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,https://bitbucket.org/PeterNet/my1strepo/src/85ac029ecc2db004c520b5745065136e379af767/c2/csv_prog.rb?at=default
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/PeterNet/my1strepo/src/fbeb176d3204/csv_homework.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://bitbucket.org/PeterNet/my1strepo/src/76d9ffac5b8e/ScreenShot.png
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://bitbucket.org/PeterNet/my1strepo/src/f9319d7dd698/JavaHomework.java?at=default
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://bitbucket.org/PeterNet/my1strepo/src/c044b14a6e02/c6/AirPlane.java?at=default https://bitbucket.org/PeterNet/my1strepo/src/c044b14a6e02/c6/AirPlane.rb?at=default
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://bitbucket.org/PeterNet/my1strepo/src/6cb911cc51fcf8eda01b4c9c2965dacafa4ecdb0/c7/popular.rb?at=default
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://petarnet.wordpress.com/2012/10/22/mercurial-guide/
+,,,,
+Б,21,Мартин Евелинов Симеонов,simeonovelsys@gmail.com,
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://bitbucket.org/msimeonov/homeworks/src/471cc36275c9/csv_work.rb
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://bitbucket.org/msimeonov/homeworks/src/71b81598d0e6/h4/1.png#
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://bitbucket.org/msimeonov/homeworks/src/01134f6c59ce/h5/JavaProperties.java?at=default
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://bitbucket.org/msimeonov/homeworks/src/39fb1bb4d27d/h6/AirPlane.java?at=default https://bitbucket.org/msimeonov/homeworks/src/39fb1bb4d27d/h6/1.rb?at=default
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://bitbucket.org/msimeonov/homeworks/src/d69c03d68d430e1d6e5f53dbffe7852ada00a514/h7/1.rb?at=default
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,https://simeonovelsys.wordpress.com/2012/10/22/version-control-system-tutorial/
+,,,,
+Б,24,Петър Бориславов Ников,nikov.elsys@gmail.com,Бял
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/artley/Homeworks
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/artley/h3/blob/master/repo.PNG
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/artley/h4/blob/master/SystemProperty.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/artley/h6/blob/master/AirPlane.java https://github.com/artley/h6/blob/master/AirPlane_rb.rb
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/artley/h7
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://peturnikov.wordpress.com/2012/10/22/how-to-use-github-on-ubuntu/
+,,,,
+Б,26,Радослав Михаилов Михаилов,radoisan@gmail.com,
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://github.com/radoisan/TASKS.git
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+А,9,Даниел Красимиров Цоков,daniel_tskov@abv.bg,
+,,,,
+,,,,
+3,Събиране на числата в шестата колона на csv файл,0/2/2012 10:50:00,,-------------------------------------
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://raw.github.com/gist/20c33b2ffa2b94479e5e/0483e0c0f2a8c39916b08a218d978b3f9fe4a9fd/homework2_ruby
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/DanielCokov/Homework/blob/master/h3/2.png
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+А,26,Светлин Илиев Владов,svetlin_vladov@abv.bg,
+,,,,
+,,,,
+,,,,
+4,Събиране на числата в колона в csv файл спрямо числата в друга колона,10/4/2012 10:50:00,,https://raw.github.com/gist/3816948/6a47383ceaf3a7a2d3cc30ee7c0de87b20445b67/ruby%20csv%20file
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+Б,7,Василен Асенов Любомиров,"",Бял
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://bitbucket.org/vlubomirov/homework6
+,,,,
+,,,,
+,,,,
+,,,,
+Б,1,Александър Атанасов Осенов,sonico@abv.bg,Бял
+1,Предадени входни нива,9/27/2012 10:50:00,,
+,,,,
+,,,,
+,,,,
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://github.com/Alexxx888/TP/blob/master/uptodate.PNG
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://github.com/Alexxx888/TP/blob/master/h5/CommandLine.java
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://github.com/Alexxx888/TP/tree/master/h6 https://github.com/Alexxx888/TP/tree/master/h6
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://github.com/Alexxx888/TP/tree/master/h7
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://alexosenov-blog.atspace.eu/
+,,,,
+Б,13,Денислав Райчев Първанов,denislav_parvanov_1995@abv.bg,
+,,,,
+,,,,
+,,,,
+,,,,
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://bitbucket.org/denislav13/homeworks/src/c87dba618b51/repo_status.png#
+6,Въведение в Java. Обработка на аргументи от командния ред,10/10/2012 20:00:00,,https://bitbucket.org/denislav13/tp/src/cb79d92862c7/h4/GetProperty.java?at=default
+,,,,
+,,,,
+,,,,
+,,,,
+Б,2,Александър Божидаров Димитров,xavortm@gmail.com,Бял
+,,,,
+,,,,
+,,,,
+,,,,
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,http://cloud.github.com/downloads/xavortm/HomeWork/Screenshot-1.png
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+А,29,Христо Ивайлов Михайлов,reportera7@abv.bg,Бял
+,,,,
+,,,,
+,,,,
+,,,,
+5,Добре структуриране хранилище,10/11/2012 20:00:00,,https://bitbucket.org/hmihaylov/homework/src/c30e9d92e46b3b4d53dc8358a397a7f3124ba99e/h14/1.png
+,,,,
+7,Автоматична подредба на пътници в самолет,10/15/2012 20:00:00,,https://bitbucket.org/hmihaylov/homework/changeset/8d4e34dc25426f7a488c43ada612aaf8 -
+8,Най-популярен ученик в клас,10/17/2012 20:00:00,,https://bitbucket.org/hmihaylov/homework/src/dc7c37e9c93fcd251d1bf66a14324cbc925217dc/h16/h6.py
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://hmihaylov.blogspot.com/2012/10/mercurial-and-bitbucket-turorial.html
+,,,,
+Б,3,Анна-Мария Верева матейна,any333@abv.bg,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+9,"Създаване на съдържание/статия, описващa процеса на commit, pull, push, etc през терминал.",10/22/2012 20:00:00,,http://any333.wordpress.com/2012/10/22/gitcommands/
+,,,,

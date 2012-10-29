@@ -138,5 +138,8 @@ csv = CSV.open("Tasks.csv", "w")
 
 csv << ["Клас", "номер", "име", "поща", "колан", "номер на домашно", "заглавие на домашното", "краен срок, дата на предаване", "предадено ли е на време", "връзки към решените задачи"]
 students.each do |student|
-  csv << [student.clas, student.num, student.name, student.mail, student.belt]	
+  csv << [student.clas, student.num, student.name, student.mail, student.belt]
+  student.tasks.each do |task|
+  	csv << [task.num, task.name, task.deadline, task.in_time, task.links]	
+  end
 end
