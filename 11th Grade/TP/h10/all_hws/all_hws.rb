@@ -1,3 +1,11 @@
+=begin
+#school - ТУЕС
+#class - 11Б
+#num - 22
+#name - Михаил Михайлов Здравков
+#task - Проверка на предадени домашни.
+=end
+
 require 'csv'
 require 'date'
 require 'time'
