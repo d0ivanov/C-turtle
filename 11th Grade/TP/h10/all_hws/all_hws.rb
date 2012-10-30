@@ -219,7 +219,6 @@ for i in 0...studentsNum
 			if coincedence >= 3
 				students[i].setBelt("Yellow") if row[9] == "Да"
 				students[i].setBelt("White") if row[9] != "Да"
-				puts row[9]
 			end
 		end
 	end
@@ -247,7 +246,7 @@ end
 for i in 0...studentsNum
 	students[i].setName(translate(students[i].getName))
 	#print i, ": "
-	students[i].dump!
+	students[i].dump
 end
 print "Number of students: " ,studentsNum, "\n"
 
