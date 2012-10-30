@@ -77,41 +77,52 @@ def stripRepoLink(link)
 	return splitedLink[3], "\n"
 end
 
-def homeworks(student)
-	student.dump!
-	CSV.foreach("task_names.csv") do |line|
-		print line[0], " ", line[1], " "
-		check = 0
-		bool = false
-		CSV.foreach(line[0] + ".csv") do |row|
-			coincedence = 0
-			if check == 1 and !bool
-				timeArr = row[0].split(" ")[0].split("/")
-				deadLine = Date.new(timeArr[2].to_i, timeArr[0].to_i, timeArr[1].to_i)
-				print "Краен срок: ", deadLine.to_s, " 20:00:00", "\n"
-				bool = true
-			end
-			check += 1
-			coincedence += 1 if student.getClas == row[1]
-			coincedence += 1 if student.getNumber == row[2]
-			coincedence += 1 if student.getName == row[3]
-			coincedence += 2 if student.getEmail == row[4]
-			if row[5] != nil
-				coincedence += 1 if student.getRepo == stripRepoLink(row[5])
-			end
-			if coincedence >= 3
-				time = row[0].split(" ")[0].split("/")
-				time2 = row[0].split(" ")[1].split(":")
-				realTime = Time.utc(time[2].to_i,time[0].to_i,time[1].to_i,time2[0].to_i,time2[1].to_i,time2[2].to_i)
-				realDeadLine = Time.utc(time[2].to_i,time[0].to_i,time[1].to_i, 20, 0, 0)
-				if realDeadLine-realTime > 0 
-					puts "Навреме!", row[5]
-					puts row[8] if line[0].to_i == 7
-				else
-					puts "It's too late to apologise..."
+def homeworks(students, studentsNum)
+	CSV.open("results.csv", "w") do |file|
+#		students.each do |student|
+		for i in 0...studentsNum
+			file << [students[i].getClas, students[i].getNumber, students[i].getName, students[i].getEmail, students[i].getBelt]
+			CSV.foreach("task_names.csv") do |line|
+				#puts "3"
+				file << [line[0], line[1]]
+				check, bool = 0, false
+				CSV.foreach(line[0] + ".csv") do |row|
+					#puts "4"
+					coincedence = 0
+					if check == 1 and !bool
+						timeArr = row[0].split(" ")[0].split("/")
+						deadLine = Date.new(timeArr[2].to_i, timeArr[0].to_i, timeArr[1].to_i)
+						#print "Краен срок: ", deadLine.to_s, " 20:00:00", "\n"
+						file << ["Краен срок: ", deadLine.to_s, "20:00:00"]
+						bool = true
+					end
+					check += 1
+					coincedence += 1 if students[i].getClas == row[1]
+					coincedence += 1 if students[i].getNumber == row[2]
+					coincedence += 1 if students[i].getName == row[3]
+					coincedence += 2 if students[i].getEmail == row[4]
+					if row[5] != nil
+						coincedence += 1 if students[i].getRepo == stripRepoLink(row[5])
+					end
+					if coincedence >= 3
+						time = row[0].split(" ")[0].split("/")
+						time2 = row[0].split(" ")[1].split(":")
+						realTime = Time.utc(time[2].to_i,time[0].to_i,time[1].to_i,time2[0].to_i,time2[1].to_i,time2[2].to_i)
+						realDeadLine = Time.utc(time[2].to_i,time[0].to_i,time[1].to_i, 20, 0, 0)
+						if realDeadLine-realTime > 0 
+							#puts "Навреме!", row[5]
+							file << ["Навреме!", row[5]]
+		#					puts row[8] if line[0].to_i == 7
+							file << [row[8]] if line[0].to_i == 7
+						else
+		#					puts "It's too late to apologise..."
+							file << ["It's too late to apologise...", row[5]]
+						end
+					end
 				end
 			end
 		end
+		file.close
 	end
 end
 
@@ -198,11 +209,18 @@ end
 studentsNum = getStudentsNum(students)
 
 for i in 0...studentsNum
-	CSV.foreach("exam.csv")	do |row|
-		if row[9] == "Да"
-			students[i].setBelt("Yellow")
-		else
-			students[i].setBelt("White")
+	for j in 1..2
+		CSV.foreach("exam" + j.to_s + ".csv") do |row|
+			coincedence = 0
+			coincedence += 1 if students[i].getClas == row[1]
+			coincedence += 1 if students[i].getNumber == row[2]
+			coincedence += 2 if students[i].getName == row[3]
+			coincedence += 2 if students[i].getRepo == stripRepoLink(row[5]) unless row[5] == nil
+			if coincedence >= 3
+				students[i].setBelt("Yellow") if row[9] == "Да"
+				students[i].setBelt("White") if row[9] != "Да"
+				puts row[9]
+			end
 		end
 	end
 end
@@ -228,14 +246,10 @@ end
 
 for i in 0...studentsNum
 	students[i].setName(translate(students[i].getName))
-	print i, ": "
-	students[i].dump
+	#print i, ": "
+	students[i].dump!
 end
 print "Number of students: " ,studentsNum, "\n"
 
-while true
-	puts "\n", "Въведи пореден номер: (или -1 за изход)"
-	input = gets.to_i
-	break if input == -1
-	homeworks(students[input])
-end
+homeworks(students, studentsNum)
+
