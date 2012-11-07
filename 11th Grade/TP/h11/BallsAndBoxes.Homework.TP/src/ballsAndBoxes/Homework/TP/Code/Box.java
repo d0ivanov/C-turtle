@@ -1,9 +1,6 @@
 package ballsAndBoxes.Homework.TP.Code;
 
-import java.util.*;
-
-public class Box {
-	List<Ball> listOfBalls = new ArrayList<Ball>();
+public class Box extends BallContainer {
 	int size;
 	
 	public Box(int value){
@@ -11,13 +8,9 @@ public class Box {
 	}
 	
 	public void add(Ball ball){
-		if (listOfBalls.size() < size) {
+		if (listOfBalls.size() < size && !listOfBalls.contains(ball)) {
 			listOfBalls.add(ball);
 		}
-	}
-	
-	public void remove(Ball ball){
-		listOfBalls.remove(ball);
 	}
 	
 	public int getCapacity(){
@@ -26,13 +19,5 @@ public class Box {
 	
 	public int size(){
 		return size;
-	}
-	
-	public void clear(){
-		listOfBalls.clear();
-	}
-	
-	public boolean contains(Ball ball){
-		return listOfBalls.contains(ball);
 	}
 }

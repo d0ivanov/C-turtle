@@ -20,6 +20,7 @@ public class Main {
 		System.out.println(box.contains(b1)); // prints true
 		Ball b2 = new Ball(2);
 		box.add(b2);
+		box.add(b2); // do nothing
 		System.out.println(box.getCapacity()); // prints 5
 		System.out.println(box.contains(b2)); // prints true
 		box.remove(b1);
