@@ -1,43 +1,51 @@
 require 'net/http'
 
-class Site
+class Link
 
-  attr_accessor :url, :protocol, :pages
+  attr_accessor :value
 
-  def initializer
-    @pages = []
+  def initialize(url)
+    @value = URI(url)
   end
 
-  def get_pages
-    
+  def visit
+    Net::HTTP.get_response(@value).body
   end
 
 end
 
 class Page
 
-  attr_accessor :content, :url, :links
+  attr_accessor :url, :content, :links
 
-  def get_links
-    @links = /<a href="[a-zA-z:.\/]*">/.match(@content)
-	p @links
+  def initialize(url)
+   raise "URL must be of type Link!" unless url.is_a? Link
+   @url = url.slice ""
+   @links = []
   end
-
-end
-
-class Link
-
-  attr_accessor :value
 
   def download
-    response = Net::HTTP.get_response(URI(@value))
-	page = Page.new
-	page.content = response.body
-	page.url = @value
-	page.get_links
+    @content = @url.visit
+	@content
   end
+
+  def get_links
+    links = @content.scan(/\/wiki\/[^File][a-zA-Z0-9:_\-\(\).%#]*"/)
+	links.each do |link|
+	  @links.push(Link.new(link))
+	end
+	@links
+  end
+
 end
 
-link = Link.new
-link.value = "http://en.wikipedia.org/wiki/Tuesday"
-link.download
+class Site
+
+  attr_accessor :protocol, :url, :pages
+
+end
+
+page = Page.new(Link.new("http://en.wikipedia.org/wiki/Tuesday"))
+page.download
+puts page.get_links
+
