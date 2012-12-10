@@ -1,0 +1,3 @@
+# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#friend
+com.google.gdata.data.youtube.FriendEntry
+com.google.gdata.data.youtube.FriendFeed

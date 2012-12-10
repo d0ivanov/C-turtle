@@ -1,0 +1,29 @@
+package org.elsys.testExam;
+
+public class Car {
+
+	private Coordinate position;
+
+	private int regPlate;
+	
+	public Coordinate getPosition() {
+		return position;
+	}
+
+	public void setPosition(Coordinate position) {
+		this.position = position;
+	}
+	
+	public void print() {
+		System.out.println("CAR: " + regPlate + " ");
+		position.dump();
+	}
+
+	public int getRegPlate() {
+		return regPlate;
+	}
+
+	public void setRegPlate(int regPlate) {
+		this.regPlate = regPlate;
+	}
+}

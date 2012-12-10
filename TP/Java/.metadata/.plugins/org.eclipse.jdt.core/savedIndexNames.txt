@@ -1,0 +1,23 @@
+INDEX VERSION 1.126+/home/smithie/Programming/C-turtle/TP/Java/.metadata/.plugins/org.eclipse.jdt.core
+1143185906.index
+262802227.index
+2456322530.index
+427627113.index
+2018432933.index
+1230503809.index
+417373247.index
+1686696231.index
+3937884183.index
+757493592.index
+3422508414.index
+3721354332.index
+2134975331.index
+3155353653.index
+1734651865.index
+1159935248.index
+4048102366.index
+2683054613.index
+1825514421.index
+2898480234.index
+1698757907.index
+3124214122.index

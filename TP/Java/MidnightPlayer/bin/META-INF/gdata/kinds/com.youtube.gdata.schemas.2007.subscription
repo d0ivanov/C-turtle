@@ -1,0 +1,3 @@
+# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#subscription
+com.google.gdata.data.youtube.SubscriptionEntry
+com.google.gdata.data.youtube.SubscriptionFeed

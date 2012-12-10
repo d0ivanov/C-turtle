@@ -1,0 +1,3 @@
+# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#userProfile
+com.google.gdata.data.youtube.UserProfileEntry
+com.google.gdata.data.youtube.UserProfileFeed

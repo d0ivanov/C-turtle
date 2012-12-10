@@ -1,0 +1,65 @@
+package org.elsys.testExam;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainClass {
+
+	public static void main(String[] arg) {
+		List<Car> cars = generateCars(5);
+		printCars(cars);
+		String[] args;
+		while((args = parseArgs()) != null) {
+			int plate = Integer.parseInt(args[0]);
+			int x = Integer.parseInt(args[1]);
+			int y = Integer.parseInt(args[2]);
+			for(Car car : cars) {
+				if(car.getRegPlate() == plate) {
+					Coordinate pos = new Coordinate();
+					pos.setX(x);
+					pos.setY(y);
+					car.setPosition(pos);
+				}
+			}
+			printCars(cars);
+		}
+	}
+	
+	
+	private static List<Car> generateCars(int count) {
+		List<Car> cars = new ArrayList<Car>();
+		for(int i = 0; i < count; i++) {
+			Coordinate pos = new Coordinate();
+			pos.setX(0);
+			pos.setY(0);
+			Car car = new Car();
+			car.setRegPlate(i+1);
+			car.setPosition(pos);
+			cars.add(car);
+		}
+		return cars;
+	}
+	
+	private static void printCars(List<Car> cars) {
+		for(Car car : cars) {
+			car.print();
+			System.out.println("tets");
+		}
+	}
+	
+	private static String[] parseArgs() {
+		String s;
+		try {
+            InputStreamReader isr = new InputStreamReader(System.in);
+            BufferedReader br = new BufferedReader(isr);
+            s = br.readLine();
+    		return s.split(",");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+		return null;
+	}
+}

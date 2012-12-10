@@ -1,0 +1,11 @@
+package org.elsys.testExam;
+
+public class Car {
+
+	private Coordinate position;
+	private int regPlate;
+	
+	public void print() {
+		System.out.writeln();
+	}
+}

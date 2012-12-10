@@ -1,0 +1,3 @@
+# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#complaint
+com.google.gdata.data.youtube.ComplaintEntry
+com.google.gdata.data.youtube.ComplaintFeed

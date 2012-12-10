@@ -1,0 +1,3 @@
+# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#video
+com.google.gdata.data.youtube.VideoFeed
+com.google.gdata.data.youtube.VideoEntry

@@ -1,0 +1,9 @@
+package org.elsys.testExam;
+
+public class Truck extends Vehicle {
+	
+	public Truck(int plate, Coordinate coord) {
+		
+	}
+
+}

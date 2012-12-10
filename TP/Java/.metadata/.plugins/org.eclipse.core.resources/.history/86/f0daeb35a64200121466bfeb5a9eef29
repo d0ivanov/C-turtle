@@ -1,0 +1,14 @@
+package org.elsys.testExam;
+
+public class Truck extends Vehicle {
+	
+	private payLoad;
+	
+	public Truck(int plate, Coordinate coord) {
+		regPlate = plate;
+		position = coord;
+	}
+	
+	public void load(int payLod)
+
+}

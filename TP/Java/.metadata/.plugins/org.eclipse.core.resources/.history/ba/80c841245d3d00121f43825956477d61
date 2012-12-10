@@ -1,0 +1,10 @@
+package org.elsys.manyToOne;
+
+public class MainClass {
+
+	public static void main(){
+		ManyToOne<String, Integer> mto = new ManyToOne<String, Integer>();
+		mto.connect("test", 1);
+	}
+	
+}

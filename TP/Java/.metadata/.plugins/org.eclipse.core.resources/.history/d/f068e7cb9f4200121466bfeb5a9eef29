@@ -1,0 +1,9 @@
+package org.elsys.testExam;
+
+public class Car {
+
+	private Coordinate position;
+	private int regPlate;
+	
+	
+}

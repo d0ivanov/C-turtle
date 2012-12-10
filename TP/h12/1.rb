@@ -1,5 +1,9 @@
-require 'net/http'
-require 'uri'
+$:.unshift File.dirname('/var/lib/gems/1.8/gems/nokogiri-1.5.5/lib')
+puts $:
+require 'rubygems'
+require 'nokogiri.rb'
+#require 'net/http'
+#require 'uri'
 
 class Link
 
@@ -23,12 +27,14 @@ class Page
   def initialize(url)
     @url = url
 	@content = url.visit
+	@links = []
   end
 
   def find_links
-    raw_links = @content.scan(/\/wiki\/[^File][a-zA-Z0-9:_\-\(\).%#]*"/)
+    raw_links = @content.scan(/<a href=\".*?\"/)
 	raw_links.each do |link|
-      @links.push(Link.new(@url.url.scheme+"://www."+@url.url.host+link.delete!("\"")))
+      l = link[9..-2]
+	  @links.push(Link.new(l))
 	end
   end
 
@@ -45,4 +51,10 @@ class Site
 
   def find_pages
   end
+end
+
+page = Page.new(Link.new("http://www.abv.bg"))
+page.find_links
+page.links.each do |link|
+  p link
 end

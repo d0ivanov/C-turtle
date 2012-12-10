@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: rmistry
+Build-Jdk: 1.6.0-google-v4
+Implementation-Title: Google APIs Client Library for Java
+Implementation-Version: 1.7.0-beta
+Implementation-Vendor-Id: com.google.api-client
+Implementation-Vendor: Google
+Class-Path: google-oauth-client-1.7.0-beta.jar google-http-client-1.7.
+ 0-beta.jar android-1.5_r4.jar commons-logging-1.1.1.jar opengl-api-gl
+ 1.1-android-2.1_r1.jar xmlParserAPIs-2.6.2.jar gson-2.1.jar httpclien
+ t-4.0.3.jar httpcore-4.0.1.jar jackson-core-asl-1.9.4.jar xpp3-1.1.4c
+ .jar protobuf-java-2.2.0.jar commons-codec-1.6.jar jsr305-1.3.9.jar g
+ uava-11.0.1.jar
+
