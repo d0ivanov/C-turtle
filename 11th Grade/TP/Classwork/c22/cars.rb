@@ -1,28 +1,33 @@
-class Loadable
-	attr_accessor :load
-
-	def getLoad(vechicle)
-		vechicle.load
-	end
-
-	def load_it(value)
-		@load += value
-	end
+module Loadable
+	def getLoad(vechicle); end
+	def load_it(value); end
 end
 
-class Car < Loadable
+class Vechicle
 	attr_accessor :number, :x, :y
 
 	def initialize(number)
 		@number = number
-		@x = 0 and @y = 0
-		@load = 0
+		@x, @y = 0
 	end
 
-	def printCar
+	def printVechicle
 		print "Number: ", @number, "\n"
 		print "X:", @x, "\n"
 		print "Y:", @y, "\n"
+	end
+end
+
+class Car < Vechicle
+	include Loadable
+
+	def initialize(number)
+		super(number)
+		@load = 0
+	end
+
+	def printVechicle
+		super()
 		print "Load: ", @load, "\n"
 	end
 
@@ -32,38 +37,50 @@ class Car < Loadable
 	end
 end
 
-class Truck < Car
+class Truck < Vechicle
+	include Loadable
+
+	def initialize(number)
+		super(number)
+		@load = 0
+	end
+
+	def printVechicle
+		super()
+		print "Load: ", @load, "\n"
+	end
+	
 	def load_it(value)
 		@load += value and return if @load + value < 20
 		abort("Too much load.")
 	end
 end
 
-def printCars(arr)
-	for i in 0...10 do 
-		arr[i].printCar
+def printVechicles(arr)
+	arr.each do |vechicle| 
+		vechicle.printVechicle
 	end
 end
 
-cars = Array.new
+vechicles = Array.new
 for i in 0...10 do
-	cars.push Car.new(i) if i < 5
-	cars.push Truck.new(i) if i >= 5
+	vechicles.push Car.new(i) if i < 5
+	vechicles.push Truck.new(i) if i >= 5
 end
 
 while true
 	p "-1 to exit"
 	abort("Bye bye") if gets.chomp.to_i == -1
-	printCars(cars)
+	printVechicles(vechicles)
 	p "1 to move other to load:" and option = gets.chomp.to_i
 	if option == 1
 		p "Enter car number:" and num = gets.chomp.to_i
 		p "New X:" and x = gets.chomp.to_i
 		p "New Y:" and y = gets.chomp.to_i
-		cars.map {|car| car.x = x and car.y = y if car.number == num }
+		vechicles.map {|vechicle| vechicle.x = x and vechicle.y = y if vechicle.number == num }
 	else
 		p "number: " and num = gets.chomp.to_i 
 		p "Load: " and load = gets.chomp.to_i
-		cars.map {|car| car.load_it(load) if car.number == num }
+		vechicles.map {|vechicle| vechicle.load_it(load) if vechicle.number == num }
 	end
 end
