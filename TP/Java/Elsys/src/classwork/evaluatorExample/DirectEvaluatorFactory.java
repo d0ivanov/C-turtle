@@ -1,28 +1,27 @@
 package classwork.evaluatorExample;
 
+import classwork.evaluatorExample.evaluators.FibonaciEvaluator;
+import classwork.evaluatorExample.evaluators.PowerOnEvaluator;
+
 public class DirectEvaluatorFactory implements IEvaluatorFactory {
 
 	@Override
 	public IEvaluator createSumEvaluator() {
-		// TODO Auto-generated method stub
-		return null;
+		return new PowerOnEvaluator(1);
 	}
 
 	@Override
 	public IEvaluator createPowerOnEvaluator() {
-		// TODO Auto-generated method stub
-		return null;
+		return new PowerOnEvaluator(2);
 	}
 
 	@Override
 	public IEvaluator createPowerOnEvaluator(double power) {
-		// TODO Auto-generated method stub
-		return null;
+		return new PowerOnEvaluator(power);
 	}
 
 	@Override
 	public IEvaluator createFibonaciEvaluator() {
-		// TODO Auto-generated method stub
-		return null;
+		return new FibonaciEvaluator();
 	}
 }

@@ -1,0 +1,9 @@
+package classwork.evaluatorExample;
+
+import classwork.evaluatorExample.evaluators.FibonaciEvaluator;
+import classwork.evaluatorExample.evaluators.PowerOnEvaluator;
+
+public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
+
+
+}

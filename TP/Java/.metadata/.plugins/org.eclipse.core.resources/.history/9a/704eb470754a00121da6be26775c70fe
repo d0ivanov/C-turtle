@@ -1,0 +1,12 @@
+package classwork.evaluatorExample.evaluators;
+
+
+public final class FibunacciEvaluator extends Evaluator {
+
+	@Override
+	protected Double doEval(Double d) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

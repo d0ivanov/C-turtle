@@ -1,0 +1,28 @@
+package classwork.evaluatorExample;
+
+import classwork.evaluatorExample.evaluators.FibunacciEvaluator;
+import classwork.evaluatorExample.evaluators.PowerOnEvaluator;
+import classwork.evaluatorExample.evaluators.SumEvaluator;
+
+public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
+
+	@Override
+	public IEvaluator createSumEvaluator() {
+		return new SumEvaluator();
+	}
+
+	@Override
+	public IEvaluator createPowerOnEvaluator() {
+		return new PowerOnEvaluator();
+	}
+
+	@Override
+	public IEvaluator createPowerOnEvaluator(double power) {
+		return new PowerOnEvaluator();
+	}
+
+	@Override
+	public IEvaluator createFibonaciEvaluator() {
+		return new FibunacciEvaluator();
+	}
+}

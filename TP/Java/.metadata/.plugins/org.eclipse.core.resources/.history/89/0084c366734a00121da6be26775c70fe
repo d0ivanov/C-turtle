@@ -1,0 +1,14 @@
+package classwork.evaluatorExample.evaluators;
+
+
+
+public class SumEvaluator extends Evaluator{
+
+	@Override
+	protected Double doEval() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

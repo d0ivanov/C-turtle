@@ -1,0 +1,17 @@
+package classwork.evaluatorExample.evaluators;
+
+
+public final class PowerOnEvaluator extends Evaluator {
+
+	private int pow;
+	
+	public PowerOnEvaluator(int pow) {
+		this.pow = pow;
+	}
+	
+	@Override
+	protected Double doEval(Double d) {
+		return Math.pow(d, pow);
+	}
+
+}

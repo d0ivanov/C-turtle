@@ -1,0 +1,6 @@
+package classwork.evaluatorExample.evaluators;
+
+
+public final class FibunacciEvaluator extends Evaluator {
+
+}

@@ -1,0 +1,11 @@
+package classwork.evaluatorExample.evaluators;
+
+
+public final class FibonaciEvaluator extends Evaluator {
+
+	@Override
+	protected Double doEval(Double d) {
+		return null;
+	}
+
+}

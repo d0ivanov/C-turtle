@@ -1,0 +1,27 @@
+package classwork.evaluatorExample.test;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import classwork.evaluatorExample.evaluators.DirectPowerOnEvaluator;
+
+public class DirectPowerOnEvaluatorTest {
+
+	@Test
+	public void testPower() {
+		DirectPowerOnEvaluator p = new DirectPowerOnEvaluator();
+		p.add(2);
+		p.add(3);
+		assertEquals(13.0, p.evaluate(), 0.001);
+	}
+	
+	@Test
+	public void testEval() {
+		DirectPowerOnEvaluator p = new DirectPowerOnEvaluator();
+		p.add(2);
+		p.add(3);
+		assertEquals(13.0, p.evaluate(), 0.001);
+	}
+
+}

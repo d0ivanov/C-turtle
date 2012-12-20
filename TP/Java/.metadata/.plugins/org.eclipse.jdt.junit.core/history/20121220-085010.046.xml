@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="DirectPowerOnEvaluatorTest" project="Elsys" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="classwork.evaluatorExample.test.DirectPowerOnEvaluatorTest" time="0.004">
+    <testcase name="testPower" classname="classwork.evaluatorExample.test.DirectPowerOnEvaluatorTest" time="0.003"/>
+    <testcase name="testEval" classname="classwork.evaluatorExample.test.DirectPowerOnEvaluatorTest" time="0.001"/>
+  </testsuite>
+</testrun>

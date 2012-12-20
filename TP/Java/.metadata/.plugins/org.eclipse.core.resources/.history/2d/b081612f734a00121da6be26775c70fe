@@ -1,0 +1,9 @@
+package classwork.evaluatorExample.evaluators;
+
+import java.util.List;
+
+
+public class SumEvaluator extends Evaluator{
+
+
+}
