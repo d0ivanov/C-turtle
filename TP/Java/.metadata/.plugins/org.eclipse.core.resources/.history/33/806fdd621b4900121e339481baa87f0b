@@ -1,0 +1,18 @@
+package classwork.evaluators;
+
+public class Evaluator implements IEvaluator{
+
+	@Override
+	public void add(double d) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public abstract Double evaluate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

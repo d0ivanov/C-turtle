@@ -1,0 +1,15 @@
+package classwork.interclass;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Evaluator implements IEvaluator{
+	
+	private List<Double> eval = new ArrayList<Double>();
+	
+	@Override
+	public abstract void add(double d);
+
+	@Override
+	public abstract Double evaluate();
+}

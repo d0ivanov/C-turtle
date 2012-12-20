@@ -1,0 +1,5 @@
+package classwork.interclass;
+
+public abstract class AbsoluteEvaluator implements IEvaluator{
+
+}

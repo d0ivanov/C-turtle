@@ -1,0 +1,27 @@
+package classwork.interclass;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class SumEvaluator extends Evaluator {
+
+	@Override
+	public void add(double d) {
+		eval.add(d);
+	}
+
+	@Override
+	public Double evaluate() {
+		double res = 0;
+		if(eval.size() > 0) {
+			for(Double d : eval) {
+				res +=d;
+			}
+			eval.removeAll(eval);
+			eval.add(res);
+			return res;
+		}
+		return 0.0;
+	}
+
+}

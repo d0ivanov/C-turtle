@@ -1,0 +1,29 @@
+package classwork.evaluatorExample;
+
+import classwork.evaluatorExample.evaluators.AbsoluteSumEvaluator;
+
+public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
+
+	@Override
+	public IEvaluator createSumEvaluator() {
+		return new AbsoluteSumEvaluator();
+	}
+
+	@Override
+	public IEvaluator createPowerOnEvaluator() {
+		return new AbsolutePowerOnEvaluator();
+		return null;
+	}
+
+	@Override
+	public IEvaluator createPowerOnEvaluator(double power) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IEvaluator createFibonaciEvaluator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

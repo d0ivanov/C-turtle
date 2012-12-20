@@ -1,0 +1,19 @@
+package classwork.interclass;
+
+public class SumEvaluator extends Evaluator {
+
+	private List<Double> eval = new ArrayList<Double>();
+	
+	@Override
+	public void add(double d) {
+		eval.add();
+		
+	}
+
+	@Override
+	public Double evaluate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

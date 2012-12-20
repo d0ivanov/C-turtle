@@ -1,0 +1,29 @@
+package classwork.evaluatorExample.evaluators;
+
+import classwork.evaluatorExample.Evaluator;
+
+public class AbsolutePowerOnEvaluator extends Evaluator {
+
+	private int power;
+	
+	public AbsolutePowerOnEvaluator() {
+		this.power = 0;
+	}
+	
+	public AbsolutePowerOnEvaluator(int power) {
+		this.power = power;
+	}
+	
+	@Override
+	public Double evaluate() {
+		double res = 0;
+		for (Double val : evaluated) {
+			if (power != 0) {
+				res += val * power;
+			} else {
+				
+			}
+		}
+	}
+
+}

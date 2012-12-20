@@ -1,0 +1,13 @@
+package classwork.evaluators;
+
+public class AbsoluteSumEvaluator extends Evaluator{
+
+	@Override
+	public Double evaluate() {
+		double res = 0;
+		for(Double value : evaluated) {
+			
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+package classwork.interclass;
+
+public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
+
+	@Override
+	public IEvaluator createSumEvaluator() {
+		return null;
+	}
+
+	@Override
+	public IEvaluator createPowerOnEvaluator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IEvaluator createPowerOnEvaluator(double power) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IEvaluator createFibonaciEvaluator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+9
+3
+5
+1
+2
+eval.createFibEval();

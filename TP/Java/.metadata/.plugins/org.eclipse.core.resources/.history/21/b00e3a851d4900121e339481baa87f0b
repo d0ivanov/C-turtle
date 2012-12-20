@@ -1,0 +1,16 @@
+package classwork.evaluatorExample;
+
+public class AbsoluteSumEvaluator extends Evaluator{
+
+	@Override
+	public Double evaluate() {
+		double res = 0;
+		for(Double value : evaluated) {
+			res += value;
+		}
+		evaluated.removeAll(evaluated);
+		evaluated.add(res);
+		return res;
+	}
+
+}

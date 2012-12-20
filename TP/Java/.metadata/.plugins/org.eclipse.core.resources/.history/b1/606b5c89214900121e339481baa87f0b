@@ -1,0 +1,20 @@
+package classwork.evaluatorExample.evaluators;
+
+import classwork.evaluatorExample.Evaluator;
+
+public class AbsoluteFibunacciEvaluator extends Evaluator{
+
+	@Override
+	public Double evaluate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	private int fib(int n) {
+		if (n < 2) {
+			return n;
+		} else {
+			return fib(n - 1) + fib(n - 2);
+		}
+	}
+}

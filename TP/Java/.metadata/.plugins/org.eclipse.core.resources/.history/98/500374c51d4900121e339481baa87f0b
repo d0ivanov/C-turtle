@@ -1,0 +1,7 @@
+package classwork.evaluatorExample.evaluators;
+
+import classwork.evaluatorExample.Evaluator;
+
+public class AbsolutePowerOnEvaluator extends Evaluator {
+
+}

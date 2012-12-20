@@ -1,0 +1,5 @@
+package classwork.evaluators;
+
+public class AbsoluteSumEvaluator extends Evaluator{
+
+}

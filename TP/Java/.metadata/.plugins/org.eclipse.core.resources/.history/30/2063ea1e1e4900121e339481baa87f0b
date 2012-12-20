@@ -1,0 +1,23 @@
+package classwork.evaluatorExample.evaluators;
+
+import classwork.evaluatorExample.Evaluator;
+
+public class AbsolutePowerOnEvaluator extends Evaluator {
+
+	private int power;
+	
+	public AbsolutePowerOnEvaluator() {
+		
+	}
+	
+	public AbsolutePowerOnEvaluator(int power) {
+		this.power = power;
+	}
+	
+	@Override
+	public Double evaluate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

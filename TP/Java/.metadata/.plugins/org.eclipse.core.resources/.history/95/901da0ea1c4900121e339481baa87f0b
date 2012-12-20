@@ -1,0 +1,11 @@
+package classwork.evaluators;
+
+public class AbsoluteSumEvaluator extends Evaluator{
+
+	@Override
+	public Double evaluate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

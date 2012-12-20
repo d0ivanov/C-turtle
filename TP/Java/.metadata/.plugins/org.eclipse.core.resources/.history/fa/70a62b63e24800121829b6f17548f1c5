@@ -1,0 +1,10 @@
+package classwork.interclass;
+
+public abstract class Evaluator implements IEvaluator{
+
+	@Override
+	public abstract void add(double d);
+
+	@Override
+	public abstract Double evaluate();
+}

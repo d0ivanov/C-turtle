@@ -1,0 +1,7 @@
+package classwork.evaluatorExample.test;
+
+import org.junit.Test;
+
+public class SumEvaluatorTest {
+
+}
