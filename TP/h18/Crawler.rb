@@ -3,7 +3,7 @@ require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
-@@BASE_URL = 'http://www.telerik.com'
+@@BASE_URL = 'http://telerik.com'
 
 def get_page(url)
 	if uri_valid?(url)
@@ -22,7 +22,7 @@ def uri_valid? url
 end
 
 def link_external? link
-	if uri_valid?(link) && link.include?(@@BASE_URL)
+	if uri_valid?(link) && link.include?(ARGV[0])
 		return false
 	else
 		return true
@@ -33,10 +33,10 @@ def parse_link link
 	if uri_valid? link
 		return link
 	end
-	if uri_valid? @@BASE_URL + link
-		return @@BASE_URL + link
-	elsif uri_valid? @@BASE_URL + "/" + link
-		return @@BASE_URL + "/" + link
+	if uri_valid?(ARGV[0] + link)
+		return ARGV[0] + link
+	elsif uri_valid?(ARGV[0] + "/" + link)
+		return ARGV[0] + "/" + link
 	end
 	nil
 end
@@ -57,14 +57,15 @@ def crawl url, depth
 	links.uniq!
 	links.each do |link|
 		link = parse_link link
-		if link == nil || link == @@BASE_URL || link_external?(link)
+		if link == nil || link == ARGV[0] || link_external?(link)
 			next
 		end
 		if depth < 3
+			p link
 			crawl link, depth+1
 		end
 	end
 	return links
 end
 
-p crawl @@BASE_URL, 1
+p crawl ARGV[0], 1
