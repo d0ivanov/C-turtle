@@ -1,0 +1,55 @@
+<% title @episode.full_name, false %>
+
+<div id="episode" class="<%= "legacy" if @episode.legacy? %>">
+  <% if params[:autoplay] %>
+    <div id="video_wrapper"><%= episode_video_tag @episode %></div>
+  <% else %>
+    <script type="text/html" id="video_template">
+      <%= episode_video_tag @episode %>
+    </script>
+  <% end %>
+  <div class="info<%= " video_info" if params[:autoplay] %>">
+    <div class="screenshot"><%= link_to image_tag("/assets/episodes/stills/#{@episode.asset_name}.png", :size => "200x125", :alt => @episode.name), {:autoplay => true}, :class => "play_video" %></div>
+    <h1>
+      <span class="position">#<%= @episode.position %></span>
+      <%= @episode.name %>
+    </h1>
+    <div class="details">
+      <%= @episode.published_at.strftime('%b %d, %Y') %> |
+      <%= pluralize (@episode.seconds/60).round, "minute" %> |
+      <%= raw @episode.tags.map { |tag| link_to tag.display_name, root_path(:tag_id => tag) }.join(", ") %>
+      <% unless @episode.published? %>
+        <span class="unreleased">NOT YET RELEASED</span>
+      <% end %>
+    </div>
+    <div class="description"><%= @episode.description %></div>
+    <div class="watch">
+      <%= link_to({:autoplay => true}, {:class => "play_video watch_button"}) do %>
+        Click to Play Video &#9654;
+      <% end %>
+    </div>
+    <div class="social">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="<%= episode_url(@episode) %>" data-text="Watching <%= @episode.name %> on RailsCasts" data-count="horizontal" data-via="railscasts">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </div>
+    <ul class="downloads horizontal">
+      <li>Download:</li>
+      <% for file in @episode.available_files %>
+        <li>
+          <%= link_to file[:name], file[:url] %>
+          <span class="overlay"><%= file[:info] %> (<%= number_to_human_size(file[:size]) %>)</span>
+        </li>
+      <% end %>
+    </ul>
+    <div class="clear"></div>
+  </div>
+  <ul class="nav horizontal">
+    <li class="selected"><%= tab_link "Show Notes", :view => nil %></li>
+    <li><%= tab_link pluralize(@episode.comments.size, "Comment"), :view => "comments" %></li>
+    <li><%= tab_link "Similar Episodes", :view => "similar" %></li>
+    <%= content_tag :li, link_to("Next Episode >", @episode.next), :class => "next" if !@episode.last_published? && @episode.next %>
+    <%= content_tag :li, link_to("< Previous Episode", @episode.previous), :class => "previous" if @episode.previous %>
+  </ul>
+  <div class="nav_section">
+    <%= %w[comments similar].include?(params[:view]) ? render(params[:view]) : render("show_notes") %>
+  </div>
+</div>

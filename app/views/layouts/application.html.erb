@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= content_for?(:title) ? yield(:title) : "Ruby on Rails Screencasts" %> - RailsCasts</title>
+    <meta name="description" content="Short Ruby on Rails screencasts containing tips, tricks and tutorials. Great for both novice and experienced web developers." />
+    <meta name="keywords" content="rails, ruby on rails, screencasts, railscast, railscasts, tips, tricks, tutorials, training, podcasts, programming" />
+    <link rel="alternate" type="application/rss+xml" title="Episodes RSS" href="http://feeds.feedburner.com/railscasts" />
+    <%= stylesheet_link_tag "application", "coderay" %>
+    <%= javascript_include_tag "jquery.min", "rails", "http://cdn.sublimevideo.net/js/3s7oes9q.js", "application" %>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="top">
+      <div class="logo"><%= link_to image_tag("railscasts_logo.png", :size => "423x56", :alt => "RailsCasts - Ruby on Rails Screencasts"), root_path %></div>
+      <ul class="subscribe horizontal">
+        <li>
+          <%= link_to image_tag("icons/itunes.png", :size => "34x34"), "http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=218282043" %>
+          <span class="name">watch on iTunes</span>
+        </li>
+        <li>
+          <%= link_to image_tag("icons/twitter.png", :size => "34x34"), "http://twitter.com/railscasts" %>
+          <span class="name">follow on Twitter</span>
+        </li>
+        <li>
+          <%= link_to image_tag("icons/facebook.png", :size => "34x34"), "http://www.facebook.com/pages/railscasts/197415140659" %>
+          <span class="name">follow on Facebook</span>
+        </li>
+        <li>
+          <%= link_to image_tag("icons/rss.png", :size => "34x34"), "http://feeds.feedburner.com/railscasts" %>
+          <span class="name">subscribe to RSS feed</span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="nav_bar">
+      <ul class="nav horizontal">
+        <li><%= link_to_unless_current "Browse Episodes", root_url %></li>
+        <li><%= link_to_unless_current "About RailsCasts", about_path %></li>
+        <li><%= link_to_unless_current "Feedback", feedback_path %></li>
+        <% if can? :index, :comments %>
+          <li><%= link_to_unless_current "Recent Comments", comments_path %></li>
+        <% end %>
+      </ul>
+      <%= form_tag episodes_path, :method => "get" do %>
+        <%= text_field_tag :search, params[:search], :size => 35 %>
+        <%= submit_tag "Search Episodes", :name => nil %>
+      <% end %>
+    </div>
+
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, raw(msg), :id => "flash_#{name}") %>
+    <% end %>
+
+    <div id="main">
+      <% if show_title? %>
+        <h1 class="content"><%= yield(:title) %></h1>
+      <% end %>
+
+      <%= yield %>
+    </div>
+    <div id="footer">
+      <div class="inner">
+        &copy;<%= Date.today.year %> RailsCasts - Hosted by <%= link_to "Linode", "http://www.linode.com/?utm_source=railscasts.com&utm_medium=Badge&utm_campaign=Railscasts" %> - This site is <%= link_to "open source", "https://github.com/ryanb/railscasts" %>
+      </div>
+    </div>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7696481-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<div class="headline">
+  <% if comment.new_record? %>
+    <span class="position">New comment as</span>
+  <% end %>
+  <span class="name">
+    <% if comment.user %>
+      <%= link_to comment.user.display_name, comment.user %>
+    <% else %>
+      <%= link_to_unless comment.site_url.blank?, comment.name, fix_url(comment.site_url), :rel => "nofollow" %>
+    <% end %>
+    <% if params[:controller] != "episodes" %>
+      on <%= link_to comment.episode.full_name, episode_path(comment.episode, :view => "comments", :anchor => "comment_#{comment.id}") %>
+    <% end %>
+  </span>
+  <% unless comment.created_at.nil? %>
+    <%= link_to episode_path(comment.episode, :view => "comments", :anchor => "comment_#{comment.id}"), :class => "created_at" do %>
+      <% if params[:controller] == "episodes" %>
+        <%= time_ago_in_words comment.created_at %> ago
+      <% else %>
+        <%= comment.created_at.strftime("%Y-%m-%d %H:%M:%I") %>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+Someone has responded to your comment on RailsCasts. Here is the response.
+
+---
+From: <%= raw @comment.user.name %>
+
+<%= raw @comment.content %>
+---
+
+To view the full comment: <%= episode_url(@comment.episode, :view => "comments") %>
+
+To unsubscribe from future emails from RailsCasts, just click this link:
+<%= unsubscribe_url(@user.generated_unsubscribe_token) %>

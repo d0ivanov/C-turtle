@@ -1,0 +1,24 @@
+<% title "Edit Profile" %>
+
+<div class="content">
+<%= form_for @user do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :site_url, "Site URL" %>
+    <%= f.text_field :site_url %>
+  </p>
+  <p>
+    <%= f.check_box :email_on_reply %>
+    <%= f.label :email_on_reply, "Receive email when a user replies to your comment", :class => "check_box" %>
+  </p>
+  <p><%= f.submit "Update Profile" %></p>
+<% end %>
+</div>
