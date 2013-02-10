@@ -23,10 +23,9 @@
 (defn read-hash-unique []
 	(into {}
   	(with-open [r (reader "hash.txt")]
-	 		(doall (distinct
-							(map #(read-string
-											(str "[" (replace % #"[{}]" "")) "]")
-								(line-seq r)))))))
+	 		(doall 
+				(distinct
+					(map #(read-string (str "[" (replace % #"[{}]" "")) "]") (line-seq r)))))))
 
 (defn get-unique-elements [hashmap]
 	(distinct (flatten (for [x hashmap] (x 1)))))
