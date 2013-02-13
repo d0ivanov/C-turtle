@@ -1,0 +1,23 @@
+# web-crawler2
+
+A simple web crawler script, written in Clojure. Made for a school assignment.
+
+## Usage
+
+1. Download the project
+2. Open command line and navigate to the (project) root directory.
+4. run "lein repl"
+5. run "(use 'web-crawler2.core)"
+6. run "(main arg1 arg2)" (in current version, the main function is not ready yet)
+
+This will generate a file named "hash.txt" in the project root directory. The file will contain:
+{ :index-url [vector of the links, found in the index page]
+	:url1 [vector of the links, found in the url1's page]
+	:url2 [vector of the links, found in the url1's page]
+	... etc.}
+
+## License
+
+Copyright (C) 2013 FIXME
+
+Distributed under the Eclipse Public License, the same as Clojure.

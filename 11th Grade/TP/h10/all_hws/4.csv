@@ -1,0 +1,56 @@
+Timestamp,Клас,Номер,Име,Email,Връзка към задача за събиране на числата в колона в CSV файл спрямо стойностите на друга колона,"Език, на който е реализирана"
+10/4/2012 8:11:51,11Б,6,Божидар Ивов Гьорев,b.giorev@gmail.com,https://github.com/bgiorev/tuestech/blob/master/mycsv_new.py,Python
+10/4/2012 8:12:19,11 Б,16,Едуард Федев Калфов,edward.kalfov@abv.bg,https://bitbucket.org/TheScouser/python/src/35748424d5ad/version_control_homework,Python
+10/4/2012 8:12:34,11 Б,1,Александър Атнасов Осенов,sonico@abv.bg,https://github.com/Alexxx888/Programs/blob/master/alex.py,Python
+10/4/2012 8:15:38,11Б,3,Анна-Мария Верева Матейна,any333@abv.bg,https://github.com/any333/files-c/blob/master/csv%2B.py,Python
+10/4/2012 8:17:15,11 Б,14,Димитър Антонов Борисов,dimitar.borisov@mail.bg,https://bitbucket.org/dborisov/programs/src/dd850c72a616/Python/reading_from_csv.py,Python
+10/4/2012 8:18:46,11Б,20,Красимир Светославов Стойков,Krasimir.Stojkov@gmail.com,https://github.com/lukistar/Discworld/blob/master/Homework3.py,Python
+10/4/2012 9:31:49,11 а,13,Иван-Васил Тодоров Генев,ivanvasilgenev@abv.bg,https://github.com/shizhi1/Programii/blob/master/KirilMtovPythonHW2.py,Python
+10/4/2012 9:32:07,11 a,6,Васил Божурски,slightremorse@gmail.com,https://github.com/SlightRemorse/VaskosBox/blob/master/test.py,Python
+10/4/2012 9:32:36,11 A,18,Михаил Цанов,mihailcanov@abv.bg,https://bitbucket.org/mcanov/programing-homework-projects/changeset/a79aaff5379d8128a36b41f4988650b6,Python
+10/4/2012 9:32:50,11a,14,Кристин Христова Найденова,cnaydenova@gmail.com,https://bitbucket.org/cnaydenovaa/python/changeset/aea1121edb810f34c6fcf5cd4d65704522a19aca,Python
+10/4/2012 9:32:56,11a,24,Петър Станев,petarstanevtues@gmail.com,https://bitbucket.org/pstanev/homework/downloads/reader2.py,Python
+10/4/2012 9:33:16,11 a,16,Мартин Занов,martinzanov@abv.bg,https://bitbucket.org/makros/homework3,Python
+10/4/2012 9:33:44,11 A,4,Bojidar Stanchev,flashstealer@gmail.com,https://bitbucket.org/bstanchev/b.stanchev.tues,Python
+10/4/2012 9:34:39,11 A,19,Nikola Bojinov,nikola_bojinovTUES@abv.bg,https://bitbucket.org/nbojinov/homework,Python
+10/4/2012 9:35:18,11 a,23,Николай Христов Божков,nikolatbojkov95@gmail.com,https://bitbucket.org/nbojkov/homework/downloads/csv_reader_1_1.py,Python
+10/4/2012 9:36:12,11 a,28,Филип Мостафа ,filip_mos@abv.bg,https://bitbucket.org/filip_mos/programi/changeset/1be59f06f072188828a8a7d1339b3971,Python
+10/4/2012 9:37:11,11 A,7,Владимир Ангелов Ангелов,triedgeai@gmail.com,https://github.com/TriEdgeAI/elsys/blob/master/csv/csv.py,Python
+10/4/2012 9:38:14,11 a,29,Христо Михайлов,reportera7@abv.bg,https://bitbucket.org/hmihaylov/programirane/changeset/10cd5035ab17a9462b590e105ccb6eed,Python
+10/8/2012 19:06:05,11 Б,14,Димитър Антонов Борисов,dimitar.borisov@mail.bg,https://bitbucket.org/dborisov/programs/src,Python
+10/9/2012 2:28:40,11б,19,Йоан Методиев Марков,bubobuboster@gmail.com,https://github.com/Meritas/PT_homeworks/blob/master/h2/6th_col.py,Python
+10/4/2012 8:14:03,11Б,14,Добромир Иванов,syliconsynapse@gmail.com,https://github.com/starbust/C-turtle/blob/master/TP/parseCSV.rb,Ruby
+10/4/2012 8:14:05,11 Б,12,Даниела Яворова Алексова,daniela.aleksova95@abv.bg,https://github.com/Daniela666/TP-CSV/blob/master/Zadacha2-CSV.rb,Ruby
+10/4/2012 8:14:07,11 Б,23,Николай Николаев Иванов,wwwnik@abv.bg,https://bitbucket.org/anakincho/vhodno2/src/9921a6f24810/csv_homework.rb,Ruby
+10/4/2012 8:14:21,11 Б,9,Георги Евгениев Кръчков,georgi_kratchkov@abv.bg,https://github.com/Georgi-Kratchkov/Homework_1/blob/master/Summation.rb,Ruby
+10/4/2012 8:14:29,11 Б,10,Даниел Николаев Георгиев,daniel.georgiev95@gmail.com,https://github.com/subscribe01/TP/blob/master/CVS%20homework/csv_homework2.rb,Ruby
+10/4/2012 8:14:32,11 Б,10,Георги Миленов Цанев,gbdrock@abv.bg,https://github.com/mBlack95/12/blob/master/csv_homework.rb,Ruby
+10/4/2012 8:16:00,11 Б,28,Христо Георгиев Георгиев,hritogg1@abv.bg,https://github.com/hristogg1/Ruby,Ruby
+10/4/2012 8:16:47,11Б,17,Ива Йорданова Добрева,iva95dobreva@gmail.com,https://github.com/IvaDobreva/TP/blob/master/Ruby/csv_homework_ver2.rb,Ruby
+10/4/2012 8:16:54,11Б,27,Тодор Руменов Маноилов,tmanoilov@abv.bg,https://github.com/fear-sfx/TP/blob/master/csv_langs2.rb,Ruby
+10/4/2012 8:17:01,11 Б,8,Виктор Георгиев Стоянов,v_g_stojanov@abv.bg,https://github.com/powerworr/Ruby/blob/master/read_csv.rb,Ruby
+10/4/2012 8:17:11,11 Б,5,Благовест Николаев Божинов,warcraft2005@abv.bg,https://github.com/KypaB/TP/blob/master/Ruby2.rb,Ruby
+10/4/2012 8:17:57,11Б,18,Иван Венциславов Пейчинов,ipeychinov@gmail.com,https://github.com/quattrobg/TP/blob/master/homeworkruby2.rb,Ruby
+10/4/2012 8:18:02,11 Б,25,Петър Георгиев Нетовски,petarnet@abv.bg,https://bitbucket.org/PeterNet/my1strepo/src/fbeb176d3204/csv_homework.rb,Ruby
+10/4/2012 8:19:33,11Б,22,Михаил Михайлов Здравков,mihail0zdravkov@gmail.com,https://github.com/wintre/C-turtle/blob/master/11th%20Grade/TP/csv2.rb,Ruby
+10/4/2012 8:20:28,11 Б,21,Мартин Евелинов Симеонов,simeonov_elsys@abv.g,https://bitbucket.org/msimeonov/homeworks/src/471cc36275c9/csv_work.rb,Ruby
+10/4/2012 8:24:06,11 Б,24,Петър Бориславов Ников,nikov.elsys@gmail.com,https://github.com/artley/Homeworks,Ruby
+10/4/2012 8:30:50,11Б,15,Добромир Огнянов Иванов,syliconsynapse@gmail.com,https://github.com/starbust/C-turtle/blob/master/TP/parseCSV.rb,Ruby
+10/4/2012 9:20:13,11 Б,26,Радослав Михаилов Михаилов,radoisan@gmail.com,https://github.com/radoisan/TASKS.git,Ruby
+10/4/2012 9:30:35,11 a,25,Пламен Христов Никифоров,plamenxr@mail.bg,https://github.com/PlamenNikifor/Programs/blob/master/homework2.rb,Ruby
+10/4/2012 9:31:40,11 a,20,Николай Станев,nickolayatanev@abv.bg,https://github.com/anikia2/domashno2_version2/blob/master/.gitignore,Ruby
+10/4/2012 9:31:47,11 a,20,Николай Станев,nickolayatanev@abv.bg,https://github.com/anikia2/domashno2_version2/blob/master/.gitignore,Ruby
+10/4/2012 9:31:48,11a,2,Антон Митков,tonimitkov2s@gmail.com,https://bitbucket.org/t0ncho/homework.csv/changeset/68a5bba4c886bde19e8a4f882989585d,Ruby
+10/4/2012 9:31:51,11 a,27,Стефан Юлиянов Петров,spetrov123@yahoo.com,https://github.com/spetrov123/Programming/blob/master/csv_hw2.rb,Ruby
+10/4/2012 9:32:02,11 a,3,Атанас Атанасов,nasko_alekov@abv.bg,https://bitbucket.org/naskoatanasov/homework/downloads/homework1.rb,Ruby
+10/4/2012 9:32:03,11 a,22,Николай Тихомиров Коцев,Nikolay_kotzev@abv.bg,https://github.com/Hadescho/Prog_tech/blob/master/Homework3/homeworkcsv.rb,Ruby
+10/4/2012 9:32:42,11 a ,11,Диана Марио Бояджиева,didsito13@abv.bg,https://bitbucket.org/dboyadjieva/homework/downloads/project.rb,Ruby
+10/4/2012 9:33:24,11-a,9,Даниел Красимиров Цоков,daniel_tsokov@abv.bg,https://raw.github.com/gist/20c33b2ffa2b94479e5e/0483e0c0f2a8c39916b08a218d978b3f9fe4a9fd/homework2_ruby,Ruby
+10/4/2012 9:33:50,11 A,17,Мартин Красимиров Кирилов,marti_kirilov@abv.bg,https://github.com/Martinski95/ProgrammingTechnology1task/blob/master/csv_homework2.rb,Ruby
+10/4/2012 9:33:52,11 A,12,Иван Мирославов Манев,iwanmanew@yahoo.com,https://imanew@bitbucket.org/imanew/ruby-public,Ruby
+10/4/2012 9:33:57,11 a,3,Атанас Атанасов,nasko_alekov@abv.bg,https://bitbucket.org/naskoatanasov/homework/downloads/homework1.rb,Ruby
+10/4/2012 9:34:16,11 А,10,Денис Евгениев Николов,denisnikolow@gmail.com,https://github.com/denisnikolow/Denis11a/blob/master/csv_homework.rb,Ruby
+10/4/2012 9:36:15,11-a,26,Светлин Илиев Владов,svetlin_vladov@abv.bg,https://raw.github.com/gist/3816948/6a47383ceaf3a7a2d3cc30ee7c0de87b20445b67/ruby%20csv%20file,Ruby
+10/4/2012 9:38:04,11a,15,Любослав Димитров Йорданов,liuboslav_jordanov@mail.bg,https://bitbucket.org/crazybubo/ychilishte/downloads/Script.rb,Ruby
+10/10/2012 20:37:09,11Б,4,Антон Дедиков,unpredictable1819@abv.bg,https://github.com/Floriaqt/TP/tree/master/H3,Ruby
+10/17/2012 17:20:40,11 Б,2,Александър Димитров,xavortm@gmail.com,https://github.com/xavortm/HomeWork/tree/master/h3,Ruby
