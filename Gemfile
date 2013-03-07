@@ -14,6 +14,14 @@ gem "ancestry"
 gem "cancan", :git => "git://github.com/ryanb/cancan.git", :branch => "2.0"
 gem "paper_trail"
 
+#Infision
+#gem "authlogic"
+#gem "rails3-generators"
+gem "omniauth-facebook"
+gem "omniauth-github"
+gem "activerecord-mysql2-adapter"
+#/Infision
+
 group :development, :test do
   gem "rspec-rails"
   gem "launchy"

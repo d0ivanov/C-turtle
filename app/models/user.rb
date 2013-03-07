@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
   attr_accessible :name, :email, :site_url, :email_on_reply
   before_create { generate_token(:token) }
+	#Infision
+	has_many :authorizations
+	#/Infision
   has_many :comments
   has_paper_trail
 
@@ -38,4 +41,5 @@ class User < ActiveRecord::Base
   def banned?
     banned_at
   end
+
 end
