@@ -70,16 +70,22 @@ class UsersController < ApplicationController
 		auth_hash = request.env['omniauth.auth']
 		
 		@authorization = Authorization.find_by_provider_and_uid(auth_hash["provider"], auth_hash["uid"])
-		if @authorization
-			render :text => "Welcome back #{@authorization.user.name}! You have already signed up."
+		if !User.find(:all, :conditions => { :uid => auth_hash["uid"] }).empty?
+			redirect_to root_url, :notice => "You have been logged in."
+			$test = User.find(:first, :conditions => {:uid => auth_hash["uid"]}).name
 		else
 			user = User.new :name => auth_hash["info"]["name"], :email => auth_hash["info"]["email"]
+			user.uid = auth_hash["uid"]
 			user.authorizations.build :provider => auth_hash["provider"], :uid => auth_hash["uid"]
 			user.save
 
-			render :text => "Hi #{user.name}! You've signed up."
-			render :text => "Your email is: #{user.email}."
+			redirect_to root_url, :notice => "You have been signed up."
+			$test = user.name
 		end
+	end
+
+	def logout
+		$test = nil
 	end
 	
 	def failure

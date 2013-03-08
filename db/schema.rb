@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130307201615) do
+ActiveRecord::Schema.define(:version => 20130308142539) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -96,6 +96,7 @@ ActiveRecord::Schema.define(:version => 20130307201615) do
     t.datetime "banned_at"
     t.boolean  "email_on_reply",    :default => false, :null => false
     t.string   "unsubscribe_token"
+    t.string   "uid"
   end
 
   create_table "versions", :force => true do |t|

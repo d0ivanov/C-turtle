@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :site_url, :email_on_reply
+  attr_accessible :name, :email, :site_url, :email_on_reply, :uid
   before_create { generate_token(:token) }
 	#Infision
 	has_many :authorizations
@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
 
   def self.create_from_omniauth(omniauth)
     User.new.tap do |user|
+			user.uid = omniauth["info"]["uid"]
+
       user.github_uid = omniauth["uid"]
       user.github_username = omniauth["user_info"]["nickname"]
       user.email = omniauth["user_info"]["email"]
