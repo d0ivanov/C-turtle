@@ -12,7 +12,6 @@
     <%= yield(:head) %>
   </head>
   <body>
-		<%= $test %>
     <div id="top">
       <div class="logo"><%= link_to image_tag("railscasts_logo.png", :size => "423x56", :alt => "RailsCasts - Ruby on Rails Screencasts"), root_path %></div>
 			
@@ -20,8 +19,12 @@
       <ul class="subscribe horizontal">
 
 			<div class="user_nav">
-			  <a href="/auth/facebook">Log in with Facebook</a>
-				<a href="/logout">Log out</a>
+				<% if $user %>
+					<%= $user.name %>
+					<a href="/logout">Log out</a>
+				<% else %>
+					<a href="/auth/facebook">Log in with Facebook</a>
+				<% end %>
 			</div> <br/> <br/>
 
         <li>

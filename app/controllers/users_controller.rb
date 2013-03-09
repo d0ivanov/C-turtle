@@ -22,20 +22,22 @@ class UsersController < ApplicationController
  #   redirect_to @user, :notice => "Successfully updated profile."
  # end
 
- # def login
- #   session[:return_to] = params[:return_to] if params[:return_to]
- #   if Rails.env.development?
- #     cookies.permanent[:token] = User.first.token
- #     redirect_to_target_or_default root_url, :notice => "Signed in successfully"
- #   else
- #     redirect_to "/auth/github"
- #   end
- # end
+  def login
+    session[:return_to] = params[:return_to] if params[:return_to]
+    if Rails.env.development?
+      cookies.permanent[:token] = User.first.token
+      redirect_to_target_or_default root_url, :notice => "Signed in successfully"
+    else
+      redirect_to "/auth/facebook"
+    end
+		load_current_user
+  end
 
- # def logout
- #   cookies.delete(:token)
- #   redirect_to root_url, :notice => "You have been logged out."
- # end
+  def logout
+    cookies.delete(:token)
+		$user = nil
+    redirect_to root_url, :notice => "You have been logged out."
+  end
 
  # def ban
  #   @user = User.find(params[:id])
@@ -54,11 +56,6 @@ class UsersController < ApplicationController
  #   redirect_to root_url, :notice => "You have been unsubscribed from further email notifications."
  # end
 
- # private
-
- # def load_current_user
- #   @user = current_user
- # end
 
 
  # Infision
@@ -71,23 +68,27 @@ class UsersController < ApplicationController
 		
 		@authorization = Authorization.find_by_provider_and_uid(auth_hash["provider"], auth_hash["uid"])
 		if !User.find(:all, :conditions => { :uid => auth_hash["uid"] }).empty?
-			redirect_to root_url, :notice => "You have been logged in."
-			$test = User.find(:first, :conditions => {:uid => auth_hash["uid"]}).name
+			#redirect_to root_url, :notice => "You have been logged in."
+			#$test = User.find(:first, :conditions => {:uid => auth_hash["uid"]}).name
+			#login
 		else
 			user = User.new :name => auth_hash["info"]["name"], :email => auth_hash["info"]["email"]
 			user.uid = auth_hash["uid"]
 			user.authorizations.build :provider => auth_hash["provider"], :uid => auth_hash["uid"]
 			user.save
 
-			redirect_to root_url, :notice => "You have been signed up."
-			$test = user.name
+			#redirect_to root_url, :notice => "You have been signed up."
+			#$test = user.name
 		end
+		login
 	end
 
-	def logout
-		$test = nil
-	end
-	
 	def failure
 	end
+
+  private
+
+  def load_current_user
+    $user = current_user
+  end
 end
