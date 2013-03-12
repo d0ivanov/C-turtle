@@ -1,0 +1,230 @@
+#include <iostream>
+
+using namespace std;
+
+class ListException{};
+
+
+class List {
+  friend class iterator;
+  private:
+    struct Elem {
+      int data_;
+      Elem* next_;
+      Elem* prev_;
+
+      Elem(int data)
+      : data_(data),
+        next_(0),
+        prev_(0)
+      {}
+    };
+
+    Elem* head_;
+  public:
+    List()
+    : head_(new Elem(0))
+    {
+      head_->next_ = head_;
+      head_->prev_ = head_;
+    }
+
+    ~List() {
+      while(!empty()) {
+        pop_front();
+      }
+      delete head_;
+    }
+
+    bool empty() const {
+      return head_->next_ == head_;
+    }
+
+    void push_back(int val) {
+      Elem* newElem = new Elem(val);
+      Elem* back = head_->prev_;
+
+      back->next_ = newElem;
+      newElem->prev_ = back;
+
+      newElem->next_ = head_;
+      head_->prev_ = newElem;
+    }
+
+    void push_front(int val) {
+       Elem* newElem = new Elem(val);
+       Elem* front = head_->next_;
+
+       head_->next_ = newElem;
+       newElem->prev_ = head_;
+
+       newElem->next_ = front;
+       front->prev_ = newElem;
+    }
+
+    int back() const {
+      return head_->prev_->data_;
+    }
+
+    int front() const {
+      return head_->next_->data_;
+    }
+
+    void pop_back() {
+      if(empty()) {
+        throw ListException();
+      } else {
+        Elem* back = head_-> prev_;
+        Elem* newBack = back->prev_;
+
+        newBack->next_ = head_;
+        head_->prev_ = newBack;
+
+        delete back;
+      }
+    }
+
+    void pop_front() {
+      if(empty()) {
+        throw new ListException();
+      } else {
+        Elem* front = head_->next_;
+        Elem* newFront = front->next_;
+
+        head_->next_ = newFront;
+        newFront->prev_ = head_;
+
+        delete front;
+      }
+    }
+
+  public:
+    class iterator{
+      friend class List;
+      private:
+        Elem* current_;
+
+        iterator(Elem* elem)
+        : current_(elem)
+        {}
+
+      public:
+        iterator& operator++() {
+          current_ = current_->next_;
+          return *this;
+        }
+
+        int& operator*() {
+          return current_->data_;
+        }
+
+        bool operator==(const iterator& other) const {
+          return current_ == other.current_;
+        }
+
+        bool operator!=(const iterator& other) const {
+          return !(current_ == other.current_);
+        }
+    };
+
+     class const_iterator {
+        friend class List;
+        private:
+          Elem* current_;
+
+          const_iterator(Elem* elem)
+          : current_(elem)
+          {}
+
+        public:
+          const_iterator& operator++() {
+            current_ = current_->next_;
+            return *this;
+          }
+
+          const int& operator*() {
+            return current_->data_;
+          }
+
+          bool operator==(const const_iterator& other) const {
+            return current_ == other.current_;
+          }
+
+          bool operator!=(const const_iterator& other) const {
+            return !(current_ == other.current_);
+          }
+     };
+
+
+    iterator begin() {
+      return iterator(head_->next_);
+    }
+
+    iterator end() {
+      return iterator(head_);
+    }
+
+    const_iterator begin() const {
+      return const_iterator(head_->next_);
+    }
+
+    const_iterator end() const {
+      return const_iterator(head_);
+    }
+
+    List(const List& other)
+    :head_(new Elem(0))
+    {
+      head_->next_ = head_->prev_ = head_;
+
+      for(List::const_iterator it = other.begin(); it != other.end(); ++it) {
+        push_back(*it);
+      }
+    }
+
+    void clear() {
+      while(!empty()) {
+        pop_back();
+      }
+    }
+
+    List& operator=(const List& other) {
+      clear();
+
+      for(List::const_iterator it = other.begin(); it != other.back(); ++it) {
+        push_back(*it);
+      }
+
+      return *this;
+    }
+
+    /*
+
+      it++
+      void insert(iterator it, int val);
+      void erase(iterator it);
+      void erase(iterator begin, iterator eind);
+
+     */
+};
+
+int main() {
+
+  List l;
+
+  cout << "l.empty() " << l.empty() << endl;
+
+  l.push_front(1);
+  l.push_front(2);
+
+  cout << "l.empty()= " << l.empty() << endl;
+  cout << "l.front()= " << l.front() << endl;
+  cout << "l.back()= " << l.back() << endl;
+
+  l.pop_front();
+
+  cout << "l.front()= " << l.front() << endl;
+  cout << "l.back()= " << l.back() << endl;
+
+  return 0;
+}
