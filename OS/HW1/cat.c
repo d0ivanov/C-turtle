@@ -3,7 +3,7 @@
 // CLASS: XI B
 // NUMBER: 15
 // PROBLEM: #1
-// FILE NAME: cat.cc
+// FILE NAME: cat.c
 // FILE PURPOUSE: Main program file.
 // Contains all code written for this problem.
 //----------------------------------------------

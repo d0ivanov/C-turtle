@@ -1,7 +1,7 @@
 all: cat
 
 cat:
-	gcc cat.cc -o cat
+	gcc cat.c -o cat
 	
 clean:
 	rm -f *.o *~ cat
