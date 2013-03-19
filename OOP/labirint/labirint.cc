@@ -171,7 +171,16 @@ public:
 	}
 	
 	void generate(Cell& start) {
+			start.setVisited();
 			
+			while (true) {
+				Direction dir = getRandomUnvisitedNeighbour(start);
+				if (dir == NONE) {
+					return;
+				}
+				Cell& next = drill(start, dir);
+				generate(next);
+			}
 	}
 	
 	bool hasNeighbour(const Cell& cell, Direction dir) const {
@@ -194,7 +203,7 @@ public:
 		return getCell(row,col);
 	}
 	
-	const static int DRAW_PS = 25;
+	const static int DRAW_PS = 15;
 	
 	void draw_ps(ostream& out) {
 		out << "newpath" << endl;
@@ -243,15 +252,14 @@ public:
 	
 };
 
-const Direction DIRECTIONS[] = {UP, DOWN, LEFT, RIGHT};
+const Direction Board::DIRECTIONS[] = {UP, DOWN, LEFT, RIGHT};
 
 int main() {
 	
-	Board b(5, 10);
+	Board b(20, 38);
 	
-	Cell& c = b.getCell(3,3);
-	Cell& nc = b.drill(c, UP);
-	Cell& nc1 = b.drill(nc, RIGHT);
+	Cell& start = b.getCell(0,4);
+	b.generate(start);
 	
 	b.draw_ps(cout);
 	
