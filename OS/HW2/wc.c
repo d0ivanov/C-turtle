@@ -95,13 +95,13 @@ int main(int argc, char **argv)
   	{
   		counter("stdin");
   	}
-  	else if((strcmp(argv[i], "-l") != 0) && (strcmp(argv[i], "-c") != 0) && (strcmp(argv[i], "-w") != 0))
+  	else if(argv[i][0] != '-')
   	{
   		counter(argv[i]);
   	}
   }
-  
-	
+
+
   if(args > 2)
     print_stats("total", total_chars, total_words, total_lines);
   return 0;
@@ -113,57 +113,64 @@ int parse_args(int argc, char **argv)
 	int args = argc;
 	for(i = 0; i < argc; i++)
 	{
-		if(strcmp(argv[i], "-c") == 0)
-		{
-			c_flag = 1;
-			args--;
-		}
-		if(strcmp(argv[i], "-w") == 0)
-		{
-			w_flag = 1;
-			args--;
-		}
-		if(strcmp(argv[i], "-l") == 0)
-		{
-			l_flag = 1;
-			args--;
-		}
-	}
-	if(!c_flag && !w_flag && !l_flag)
-	{
-		c_flag = 1;
-		w_flag = 1;
-		l_flag = 1;
-	}
-	return args;
+    if(argv[i][0] == '-')
+    {
+      int j;
+      for(j = 1; j < strlen(argv[i]); j++)
+      {
+        if(argv[i][j] == 'c')
+        {
+          c_flag = 1;
+          args--;
+        }
+        if(argv[i][j] == 'w')
+        {
+          w_flag = 1;
+          args--;
+        }
+        if(argv[i][j] == 'l')
+        {
+          l_flag = 1;
+          args--;
+        }
+      }
+    }
+  }
+  if(!c_flag && !w_flag && !l_flag)
+  {
+    c_flag = 1;
+    w_flag = 1;
+    l_flag = 1;
+  }
+  return args;
 }
 
 void print_stats(char *f_name, unsigned long chars, unsigned long words, unsigned long lines)
 {
-	if(l_flag)
-		printf("%lu ", lines);
-	if(w_flag)
-		printf("%lu ", words);
-	if(c_flag)
-		printf("%lu ", chars);
+  if(l_flag)
+    printf("%lu ", lines);
+  if(w_flag)
+    printf("%lu ", words);
+  if(c_flag)
+    printf("%lu ", chars);
   printf("%s\n", f_name);
 }
 
 int is_dir(const char *f_name)
 {
-	struct stat s;
-	if(stat(f_name,&s) == 0)
-	{
-		  if(s.st_mode & S_IFDIR)
-		  {
-		      return 1; //it's a directory
-		  }
-		  else
-		  {
-		      return 0; //something else
-		  }
-	}
-	return -1; //error
+  struct stat s;
+  if(stat(f_name,&s) == 0)
+  {
+    if(s.st_mode & S_IFDIR)
+    {
+      return 1; //it's a directory
+    }
+    else
+    {
+      return 0; //something else
+    }
+  }
+  return -1; //error
 }
 
 int is_word(char c)
@@ -181,8 +188,8 @@ int get_word(FILE *fp)
 
   while((c = getc(fp)) != EOF)
   {
-    if(is_word(c)) 
-    { //this is actual word counter
+    if(is_word(c))
+    { //this is the actual word counter
       words++;//if char is valid word part inc words and break
       break;
     }
@@ -190,8 +197,8 @@ int get_word(FILE *fp)
     if(c == '\n')
       lines++;
   }
-	//here we continue from last read char
-	//and cound characters only
+  //here we continue from last read char
+  //and count characters only
   for (; c != EOF; c = getc(fp))
   {
     chars++;
@@ -205,26 +212,26 @@ int get_word(FILE *fp)
 
 void counter(char *f_name)
 {
-	FILE *fp;
-	if(strcmp(f_name, "stdin") != 0)
-	{
-  	if(is_dir(f_name))
-  	{
-    	fprintf(stderr, "wc: %s No such file or directory\n", f_name);
-			return;
-		}
-  	fp = fopen(f_name, "r");
+  FILE *fp;
+  if(strcmp(f_name, "stdin") != 0)
+  {
+    if(is_dir(f_name))
+    {
+      fprintf(stderr, "wc: %s No such file or directory\n", f_name);
+      return;
+    }
+    fp = fopen(f_name, "r");
 
-  	if (!fp)
-  	{
-    	fprintf(stderr, "wc: %s: %s\n", f_name, strerror(errno));
-			return;
-		}
-	}
-	else
-	{
-		fp = stdin;
-	}
+    if (!fp)
+    {
+      fprintf(stderr, "wc: %s: %s\n", f_name, strerror(errno));
+      return;
+    }
+  }
+  else
+  {
+    fp = stdin;
+  }
   chars = words = lines = 0;
   while(get_word(fp)) //loop through file. get_word returns c != EOF, so loop has stable cond
     ;
