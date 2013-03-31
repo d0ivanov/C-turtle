@@ -1,0 +1,41 @@
+
+import java.awt.event.PaintEvent;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.PaintListener;
+import org.eclipse.swt.graphics.GC;
+import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.widgets.Canvas;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+public class MainClass {
+	
+	public static int a = 0;
+	public static int b = 25;
+	
+	
+	public static void main(String[] args) {
+		Display d = new Display();
+		final Shell shell = new Shell(d);
+		
+		Canvas canvas = new Canvas(shell, SWT.None);
+		canvas.setBackground(Display.getCurrent().getSystemColor(SWT.COLOR_WHITE));
+		shell.setLayout(new FillLayout());
+		shell.setText("Huehueheuheuhe");
+		shell.addPaintListener(new PaintListener(){
+			
+			@Override
+			public void paintControl(PaintEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		shell.open();
+		while(!shell.isDisposed()) {
+			if(!d.readAndDispatch()) {
+				d.sleep();
+			}
+		}
+	}
+}

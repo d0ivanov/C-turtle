@@ -1,13 +1,17 @@
-#ifndef BIN_OPERATION_HH__
-#define BIN_OPERATION_HH__
+#ifndef BIN_OPERATIONS_HH__
+#define BIN_OPERATIONS_HH__
 
 #include "Operation.hh"
 
+class Context;
+
 class Plus : public Operation {
 
-  public:
-    Plus();
-	void calc(Context& context ) const;
+public:
+	Plus();
+	void calc(Context& context) const;
 };
 
+
 #endif
+

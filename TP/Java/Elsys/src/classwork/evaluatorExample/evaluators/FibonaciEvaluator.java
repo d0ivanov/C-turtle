@@ -15,6 +15,6 @@ public final class FibonaciEvaluator extends Evaluator {
 	}
 	
 	private double findClosest(double value) {
-		
+		return 0.00;
 	}
 }

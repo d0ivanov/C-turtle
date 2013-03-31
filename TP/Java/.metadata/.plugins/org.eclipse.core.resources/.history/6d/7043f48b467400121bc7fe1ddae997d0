@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+public class MainClass {
+	
+	public static int a = 0;
+	public static int b = 25;
+	
+	public static void main(String[] args) {
+		Display d = new Display();
+		final Shell shell = new Shell(d);
+		shell.setText("Huehueheuheuhe");
+		Button b = new Button(shell, SWT.PUSH);
+		b.setText("Click me!");
+		b.setBounds(20, 20, 100, 80);
+		b.addSelectionListener(new SelectionAdapter() {
+			public void widgetSelected(SelectionEvent e) {
+				Button b1 = new Button(shell, SWT.PUSH);
+				int x = 200;
+				int y = 200;
+				
+				b1.setText("I'm new!");
+				b1.setBounds(x, y, 20, 20);
+			}
+		});
+		shell.open();
+		
+		while(!shell.isDisposed()) {
+			if(!d.readAndDispatch()) {
+				d.sleep();
+			}
+		}
+	}
+	
+	public static List<Double> quadratic(int a, int b, int c){
+	    double discriminant = 0;
+	    List<Double> res = new ArrayList<Double>();
+	    discriminant = (b * b - 4 * a * c);
+	    if (discriminant >= 0.0) {
+	    	res.add((-b + Math.sqrt(discriminant)) / (2.0*a));
+	    	res.add((-b - Math.sqrt(discriminant)) / (2.0*a));
+	    }
+	    return res;
+    }
+}

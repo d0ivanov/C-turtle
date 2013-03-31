@@ -1,0 +1,18 @@
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Shell;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Display d = new Display();
+		Shell shell = new Shell(d);
+		shell.setText("Huehueheuheuhe");
+		
+		shell.open();
+		while(!shell.isDisposed()) {
+			if(!d.readAndDispatch()) {
+				d.sleep();
+			}
+		}
+	}
+}

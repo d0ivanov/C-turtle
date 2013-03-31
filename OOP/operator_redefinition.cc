@@ -16,7 +16,7 @@ public:
   double get_y() const {
     return y_;
   }
-  
+
   void print() const;
   Point& add(const Point& other);
   Point& sub(const Point& other);
@@ -56,8 +56,8 @@ Point operator-(const Point& other){
   return p;
 }
 
-ostrea& operator<<(ostream& out, const Point& p){
-  out << '(' << p.get_x() << ',' << 9.get_y() << ')';  
+ostream& operator<<(ostream& out, const Point& p){
+  out << '(' << p.get_x() << ',' << 9.get_y() << ')';
   return out;
 }
 

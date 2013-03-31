@@ -1,0 +1,62 @@
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.util.Random;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.ModifyEvent;
+import org.eclipse.swt.events.ModifyListener;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Display d = new Display();
+		final Shell shell = new Shell(d);
+		shell.setText("Huehueheuheuhe");
+		
+		final Text text = new Text(shell, SWT.CENTER);
+		text.setBounds(300, 300, 90, 40);
+		text.addModifyListener(new ModifyListener() {
+			@Override
+			public void modifyText(ModifyEvent arg0) {
+				if(text.getText().equals("new button")){
+					Button b1 = new Button(shell, SWT.PUSH);
+					b1.setText("I'm new!");
+					Random r = new Random();
+					b1.setBounds(r.nextInt(400), r.nextInt(400), 100, 80);
+				}
+			}
+		});
+		text.addKeyListener(new KeyListener() {
+
+			@Override
+			public void keyPressed(KeyEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
+		Button b = new Button(shell, SWT.PUSH);
+		b.setText("Click me!");
+		b.setBounds(20, 20, 100, 80);
+		b.addSelectionListener(new SelectionAdapter() {
+			public void widgetSelected(SelectionEvent e) {
+				Button b1 = new Button(shell, SWT.PUSH);
+				b1.setText("I'm new!");
+				Random r = new Random();
+				b1.setBounds(r.nextInt(400), r.nextInt(400), 100, 80);
+			}
+		});
+		shell.open();
+		
+		while(!shell.isDisposed()) {
+			if(!d.readAndDispatch()) {
+				d.sleep();
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Display d = new Display();
+		Shell shell = new Shell(d);
+		shell.setText("Huehueheuheuhe");
+		
+		Text text = new Text(shell, SWT.CENTER);
+		text.setBounds(300, 300, 20, 10);
+		Button b = new Button(shell, SWT.PUSH);
+		b.setText("Click me!");
+		b.setBounds(20, 20, 20, 20);
+		b.addSelectionListener(new SelectionAdapter() {
+			public void widgetSelected(SelectionAdapter e) {
+				
+			}
+		});
+		shell.open();
+		
+		while(!shell.isDisposed()) {
+			if(!d.readAndDispatch()) {
+				d.sleep();
+			}
+		}
+	}
+}

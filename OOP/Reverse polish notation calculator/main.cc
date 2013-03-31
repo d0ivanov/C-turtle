@@ -3,14 +3,15 @@
 #include "Calc.hh"
 #include "BinOperations.hh"
 
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
-  Context context;
-  context.add_op(new Plus());
+	Context context;
+	context.add_op(new Plus());
+	
+	Calc calc(context,cin);
+	calc.run();
 
-  Calc calc(context, cin);
-  calc.run();
+	return 0;
 }

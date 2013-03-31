@@ -1,0 +1,156 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.events.MouseListener;
+import org.eclipse.swt.events.MouseMoveListener;
+import org.eclipse.swt.events.PaintEvent;
+import org.eclipse.swt.events.PaintListener;
+import org.eclipse.swt.graphics.GC;
+import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Canvas;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Listener;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+
+public class Drawing {
+
+	private DrawingPoint start;
+	private DrawingPoint end;
+	private DrawingPoint movePoint;
+
+	public static void main(String[] args) {
+		Drawing d = new Drawing();
+		d.createCanvas();
+	}
+
+	public void createCanvas() {
+		Display d = new Display();
+		Shell shell = new Shell(d);
+		shell.setLayout(new FillLayout());
+		Shell shell2 = new Shell(d);
+		shell2.setSize(300, 100);
+		Text text = new Text(shell2, SWT.BORDER);
+		shell2.setLayout(new FillLayout());
+
+		Button compute = new Button(shell2, SWT.PUSH);
+		compute.setText("Compute");
+		
+		compute.addListener(SWT.Selection, new Listener(){
+			public void handleEvent(Event event) {
+				console.writeln("shit is going down");
+			}
+		});
+		
+		shell2.open();
+		final Canvas canvas = new Canvas(shell, SWT.BORDER);
+		canvas.setBackground(Display.getDefault().getSystemColor(
+				SWT.COLOR_WHITE));
+		final List<DrawingPoint> points = new ArrayList<DrawingPoint>();
+
+		canvas.addMouseMoveListener(new MouseMoveListener() {
+
+			@Override
+			public void mouseMove(MouseEvent e) {
+				end = new DrawingPoint(e.x, e.y);
+				canvas.redraw();
+			}
+
+		});
+		canvas.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseDoubleClick(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseDown(MouseEvent e) {
+				if (e.button == 1) {
+					start = new DrawingPoint(e.x, e.y);
+				} else if (e.button == 3) {
+					movePoint = findPoint(points, e.x, e.y);
+				}
+			}
+
+			@Override
+			public void mouseUp(MouseEvent e) {
+				if (e.button == 1) {
+					points.add(start);
+					start.title = Integer.toString(points.size());
+					// points.add(new Point(e.x, e.y));
+					// start = null;
+					canvas.redraw();
+				} else if (e.button == 3) {
+					movePoint = null;
+				}
+			}
+
+		});
+		canvas.addPaintListener(new PaintListener() {
+
+			@Override
+			public void paintControl(PaintEvent e) {
+				drawLines(points, e.gc);
+			}
+		});
+		shell.open();
+
+		while (!shell.isDisposed()) {
+			if (!d.readAndDispatch()) {
+				d.sleep();
+			}
+		}
+	}
+
+	private DrawingPoint findPoint(List<DrawingPoint> points, int x, int y) {
+		for (DrawingPoint p : points) {
+			if (Math.abs(p.x - x) < 5 && Math.abs(p.y - y) < 5)
+				return p;
+		}
+		return null;
+	}
+
+	private void drawLines(final List<DrawingPoint> points, GC gc) {
+		if (movePoint != null) {
+			movePoint.x = end.x;
+			movePoint.y = end.y;
+		}
+		// if (start != null && end != null) {
+		// gc.drawLine(start.x, start.y, end.x, end.y);
+		// }
+		for (int i = 0; i < points.size(); i++) {
+			DrawingPoint p1 = points.get(i);
+			gc.drawOval(p1.x - 4, p1.y - 4, 8, 8);
+			gc.drawText(p1.title, p1.x + 4, p1.y + 4);
+			for (int k = i + 1; k < points.size(); k++) {
+				DrawingPoint p2 = points.get(k);
+				int xnew;
+				int ynew;
+				if (p1.x > p2.x) {
+					xnew = (p1.x - p2.x) / 2 + p2.x;
+				} else {
+					xnew = (p2.x - p1.x) / 2 + p1.x;
+				}
+				if (p1.y > p2.y) {
+					ynew = (p1.y - p2.y) / 2 + p2.y;
+				} else {
+					ynew = (p2.y - p1.y) / 2 + p1.y;
+				}
+				int distance = (int) Math.pow(
+						(Math.pow(Math.abs(p1.x - p2.x), 2) + Math.pow(
+								Math.abs(p1.y - p2.y), 2)), 0.5);
+				gc.drawText(Integer.toString(distance) + "px", xnew, ynew);
+				gc.drawLine(p1.x, p1.y, p2.x, p2.y);
+			}
+		}
+		// for (int i = 0; i < points.size(); i++) {
+		// Point start = points.get(i);
+		// Point end = points.get(++i);
+		// gc.drawLine(start.x, start.y, end.x, end.y);
+		// }
+	}
+}
