@@ -1,5 +1,0 @@
-package classwork.interclass;
-
-public class DirectEvaluatorFactory implements IEvaluatorFactory {
-
-}

@@ -1,8 +1,0 @@
-package org.elsys.testExam;
-
-public class Coordinate {
-
-	private int x;
-	private int y;
-	
-}

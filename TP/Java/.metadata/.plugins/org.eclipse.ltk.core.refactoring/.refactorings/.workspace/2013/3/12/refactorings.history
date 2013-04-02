@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;elsys.osgi.bundle&apos;" deleteContents="true" description="Delete resource &apos;elsys.osgi.bundle&apos;" element1="/elsys.osgi.bundle" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1363948061323"/>
-</session>

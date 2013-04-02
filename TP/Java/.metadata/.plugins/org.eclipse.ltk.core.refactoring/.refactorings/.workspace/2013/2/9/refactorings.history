@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;org.elsys.swt&apos;" deleteContents="true" description="Delete resource &apos;org.elsys.swt&apos;" element1="/org.elsys.swt" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1361894158318"/>
-</session>

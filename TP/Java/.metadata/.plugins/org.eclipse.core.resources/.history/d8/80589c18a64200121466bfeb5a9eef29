@@ -1,9 +1,0 @@
-package org.elsys.testExam;
-
-public class Truck {
-	
-	public Truck(int plate, Coordinate coord) {
-		
-	}
-
-}

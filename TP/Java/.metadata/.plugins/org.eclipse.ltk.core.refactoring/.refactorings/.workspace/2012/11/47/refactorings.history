@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;org.elsys.example1&apos; to &apos;org.elsys.examples&apos;" description="Rename resource &apos;org.elsys.example1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/org.elsys.example1" name="org.elsys.examples" stamp="1353565784729" updateReferences="true"/>
-</session>

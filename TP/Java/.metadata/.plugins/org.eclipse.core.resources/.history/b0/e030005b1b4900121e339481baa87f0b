@@ -1,6 +1,0 @@
-package classwork.evaluators;
-
-public class Evaluator implements IEvaluator{
-
-	
-}

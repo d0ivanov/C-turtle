@@ -1,5 +1,0 @@
-package classwork.interclass;
-
-public abstract class DirectEvaluator implements IEvaluator{
-	
-}

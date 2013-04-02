@@ -1,9 +1,0 @@
-package classwork.evaluatorExample.evaluators;
-
-import java.util.List;
-
-
-public class DirectSumEvaluator extends Evaluator{
-
-
-}

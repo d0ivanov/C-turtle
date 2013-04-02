@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;classwork.c13.vehicle&apos; to &apos;Vehicle&apos;&#x0A;- Original project: &apos;org.elsys.examples&apos;&#x0A;- Original element: &apos;classwork.c13.vehicle&apos;&#x0A;- Renamed element: &apos;classwork.c13.Vehicle&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;vehicle&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;classwork.c13{vehicle.java[vehicle" matchStrategy="1" name="Vehicle" qualified="false" references="true" similarDeclarations="false" stamp="1353566863087" textual="false" version="1.0"/>
-</session>

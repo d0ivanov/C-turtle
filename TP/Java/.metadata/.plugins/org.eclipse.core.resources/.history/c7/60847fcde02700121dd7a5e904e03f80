@@ -1,9 +1,0 @@
-package org.elsys.example1.code;
-
-public class HellowWorld {
-
-	public static void main(String[] args){
-		System.out.println(args[0]);
-	}
-	
-}

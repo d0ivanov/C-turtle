@@ -1,5 +1,0 @@
-
-
-public class Snippet {
-	GC gc = new GC(canvas);
-}

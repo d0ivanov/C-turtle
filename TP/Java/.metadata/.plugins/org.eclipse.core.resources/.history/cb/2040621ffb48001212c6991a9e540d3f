@@ -1,6 +1,0 @@
-package classwork.interclass;
-
-public class SumEvaluator extends Evaluator {
-
-
-}
