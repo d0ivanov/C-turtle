@@ -12,10 +12,9 @@ class Song
     match = true
     criterion.keys.each do |crit|
       if crit != :filter
-        data, cond = to_a(send(crit)), to_a(criterion[crit])
-        data_, excluded = data, exclude(criterion[crit])
-        match &= ((data &= cond).size == cond.size - excluded.size)
-        match &= ((data_ &= excluded).size == 0)
+        data, cond, excl = set_params criterion, crit
+        match &= ((data & cond).size == cond.size - excl.size)
+        match &= ((data & excl).size == 0)
       end
       match &= filter(&criterion[crit]) if crit == :filter
     end
@@ -60,6 +59,10 @@ class Song
         excluded.push crit[0, crit.length - 1] if crit[-1, 1] == '!'
       end
       excluded
+    end
+
+    def set_params criterion, crit
+      return to_a(send(crit)), to_a(criterion[crit]), exclude(criterion[crit])
     end
 end
 
