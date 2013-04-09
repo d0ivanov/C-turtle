@@ -1,21 +1,18 @@
 <?
 require_once('class.phpmailer.php');
-set_time_limit ( 43200 );//12 hours
 
 $mail = new PHPMailer(false);
 $mail->IsSMTP();
-$mail->Host       = "localhost";
+$mail->Host       = "";
 $mail->SMTPAuth   = false;
-$mail->Host       = "localhost";
+$mail->Host       = "";
 $mail->Port       = 25;
 $mail->SMTPKeepAlive = false;
-//$mail->AddAddress('marria.alexandrrova@gmail.com', 'HAHAHAA');
-$mail->SetFrom('fail@you.com', "ahahahah");
-$mail->Subject = "hahahaahhaah";
-$mail->Body = 'HAHAHAHA';
-while(1) {
- $mail->Send();
-}
+$mail->AddAddress('', '');
+$mail->SetFrom('', "");
+$mail->Subject = "";
+$mail->Body = '';
+$mail->Send();
 
 
 
@@ -69,7 +66,7 @@ $address = "marria.alexandrrova@gmail.com";
 $mail->AddAddress($address, "You're fucked");
 $file = fopen("log.txt", "wb");
 while($mail->Send()) {
-$time = date("Y-m-d H:i:s"); 
+$time = date("Y-m-d H:i:s");
 fwrite($file, "Mail sent!\n");
 }
 fclose($file);
