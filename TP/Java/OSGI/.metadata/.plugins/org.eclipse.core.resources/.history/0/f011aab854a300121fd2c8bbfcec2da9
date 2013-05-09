@@ -1,0 +1,5 @@
+package org.elsys.hello;
+
+public class HelloWorldCommand {
+
+}

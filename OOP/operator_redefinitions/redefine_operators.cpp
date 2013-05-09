@@ -57,7 +57,7 @@ Point operator-(const Point& other){
 }
 
 ostream& operator<<(ostream& out, const Point& p){
-  out << '(' << p.get_x() << ',' << 9.get_y() << ')';
+  out << '(' << p.get_x() << ',' << p.get_y() << ')';
   return out;
 }
 

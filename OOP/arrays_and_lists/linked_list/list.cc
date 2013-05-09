@@ -107,8 +107,6 @@ public:
 		: current_(elem)
 		{}
 
-
-
 	public:
 		iterator& operator++() {
 			current_ = current_->next_;
