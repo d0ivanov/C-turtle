@@ -1,3 +1,0 @@
-# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#favorite
-com.google.gdata.data.youtube.FavoriteEntry
-com.google.gdata.data.youtube.FavoriteFeed

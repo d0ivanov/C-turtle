@@ -1,3 +1,0 @@
-# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#channel
-com.google.gdata.data.youtube.ChannelEntry
-com.google.gdata.data.youtube.ChannelFeed

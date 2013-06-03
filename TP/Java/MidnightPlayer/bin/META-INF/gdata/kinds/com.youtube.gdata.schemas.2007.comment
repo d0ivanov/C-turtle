@@ -1,3 +1,0 @@
-# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#comment
-com.google.gdata.data.youtube.CommentEntry
-com.google.gdata.data.youtube.CommentFeed

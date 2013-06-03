@@ -1,3 +1,0 @@
-# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#videoMessage
-com.google.gdata.data.youtube.VideoMessageEntry
-com.google.gdata.data.youtube.VideoMessageFeed

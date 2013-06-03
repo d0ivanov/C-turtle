@@ -1,3 +1,0 @@
-# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#rating
-com.google.gdata.data.youtube.RatingFeed
-com.google.gdata.data.youtube.RatingEntry

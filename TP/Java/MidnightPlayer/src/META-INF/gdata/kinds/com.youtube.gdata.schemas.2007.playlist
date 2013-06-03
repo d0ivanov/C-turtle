@@ -1,3 +1,0 @@
-# GData Kind Adaptors for http://gdata.youtube.com/schemas/2007#playlist
-com.google.gdata.data.youtube.PlaylistFeed
-com.google.gdata.data.youtube.PlaylistEntry
