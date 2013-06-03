@@ -1,0 +1,6 @@
+package org.elsys.command;
+
+public class HelloWorldCommand implements Command {
+
+}
+ 

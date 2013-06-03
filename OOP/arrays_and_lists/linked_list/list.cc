@@ -107,8 +107,6 @@ public:
 		: current_(elem)
 		{}
 
-
-
 	public:
 		iterator& operator++() {
 			current_ = current_->next_;
@@ -206,7 +204,7 @@ public:
 				push_back(*it);
 			}
 			return *this;
-	}
+		}
 
 	}
 

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HelloWorld
+Bundle-SymbolicName: HelloWorld
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: OSGi/Minimum-1.0
+Import-Package: org.elsys.modular

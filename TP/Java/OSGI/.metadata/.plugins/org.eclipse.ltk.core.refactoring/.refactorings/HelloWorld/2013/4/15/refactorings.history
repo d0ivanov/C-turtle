@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;org.elsys.command&apos; to &apos;org.elsys.hello&apos;&#x0A;- Original project: &apos;HelloWorld&apos;&#x0A;- Original element: &apos;HelloWorld/src/org.elsys.command&apos;&#x0A;- Renamed element: &apos;HelloWorld/src/org.elsys.hello&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;org.elsys.command&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;org.elsys.command" name="org.elsys.hello" qualified="false" references="true" stamp="1365757897377" textual="false" version="1.0"/>
+</session>
