@@ -1,5 +1,0 @@
-package org.elsys.command;
-
-public interface Command {
-
-}

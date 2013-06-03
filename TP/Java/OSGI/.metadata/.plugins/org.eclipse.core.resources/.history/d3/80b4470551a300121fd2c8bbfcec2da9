@@ -1,6 +1,0 @@
-package org.elsys.hello;
-
-public class HelloWorldCommand implements Command {
-
-}
- 
