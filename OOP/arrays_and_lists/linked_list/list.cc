@@ -204,7 +204,7 @@ public:
 				push_back(*it);
 			}
 			return *this;
-	}
+		}
 
 	}
 
