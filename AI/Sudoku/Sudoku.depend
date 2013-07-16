@@ -1,0 +1,183 @@
+# depslib dependency file v1.0
+1355585161 source:d:\aicourse\sudoku\main.cpp
+	<ctime>
+	<fstream>
+	<iostream>
+	<opencv2/opencv.hpp>
+	"./include/OCR.h"
+	"./include/Sudoku.h"
+	"./include/GASolver.h"
+	"./include/SudokuImage.h"
+	"./include/NeuralNetwork.h"
+
+1355533676 source:d:\aicourse\sudoku\src\neurallayer.cpp
+	"../include/NeuralLayer.h"
+	<iostream>
+
+1355533562 d:\aicourse\sudoku\include\neurallayer.h
+	<vector>
+	"Neuron.h"
+
+1355532463 d:\aicourse\sudoku\include\neuron.h
+	<vector>
+	<math.h>
+
+1355535459 source:d:\aicourse\sudoku\src\neuralnetwork.cpp
+	"../include/NeuralNetwork.h"
+	<iostream>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+	<limits>
+
+1355535351 d:\aicourse\sudoku\include\neuralnetwork.h
+	<vector>
+	<string>
+	"DataItem.h"
+	"NeuralLayer.h"
+
+1355532459 source:d:\aicourse\sudoku\src\neuron.cpp
+	"../include/Neuron.h"
+	<math.h>
+	<stdlib.h>
+	<iostream>
+	<stdio.h>
+
+1355791940 source:d:\aicourse\sudoku\src\sudokuimage.cpp
+	"../include/SudokuImage.h"
+	<cstdlib>
+
+1355791882 d:\aicourse\sudoku\include\sudokuimage.h
+	<ctime>
+	<opencv2/opencv.hpp>
+	"Sudoku.h"
+	"HoughLine.h"
+
+1355089714 d:\aicourse\sudoku\include\houghline.h
+
+1355956480 source:d:\aicourse\sudoku\src\ocr.cpp
+	"./../include/OCR.h"
+	<fstream>
+	<iostream>
+	<opencv2/opencv.hpp>
+
+1355586474 d:\aicourse\sudoku\include\ocr.h
+	<string>
+	<opencv2/opencv.hpp>
+	"./NeuralNetwork.h"
+
+1355622072 source:d:\aicourse\sudoku\src\gasolver.cpp
+	"./../include/GASolver.h"
+	<ctime>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+
+1355621846 d:\aicourse\sudoku\include\gasolver.h
+	<vector>
+	"Sudoku.h"
+
+1355539345 d:\aicourse\sudoku\include\sudoku.h
+	<vector>
+	<opencv2/opencv.hpp>
+
+1355539351 source:d:\aicourse\sudoku\src\sudoku.cpp
+	"../include/Sudoku.h"
+	<cstdlib>
+	<iostream>
+
+1355534657 d:\aicourse\sudoku\include\dataitem.h
+	<vector>
+
+1355625672 source:d:\smgcourse\assignments\sudoku\src\gasolver.cpp
+	"./../include/GASolver.h"
+	<ctime>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+
+1355625446 d:\smgcourse\assignments\sudoku\include\gasolver.h
+	<vector>
+	"Sudoku.h"
+
+1355542945 d:\smgcourse\assignments\sudoku\include\sudoku.h
+	<vector>
+	<opencv2/opencv.hpp>
+
+1355537276 source:d:\smgcourse\assignments\sudoku\src\neurallayer.cpp
+	"../include/NeuralLayer.h"
+	<iostream>
+
+1355537162 d:\smgcourse\assignments\sudoku\include\neurallayer.h
+	<vector>
+	"Neuron.h"
+
+1373898488 d:\smgcourse\assignments\sudoku\include\neuron.h
+	<vector>
+	<math.h>
+
+1355536059 source:d:\smgcourse\assignments\sudoku\src\neuron.cpp
+	"../include/Neuron.h"
+	<math.h>
+	<stdlib.h>
+	<iostream>
+	<stdio.h>
+
+1355542951 source:d:\smgcourse\assignments\sudoku\src\sudoku.cpp
+	"../include/Sudoku.h"
+	<cstdlib>
+	<iostream>
+
+1355795540 source:d:\smgcourse\assignments\sudoku\src\sudokuimage.cpp
+	"../include/SudokuImage.h"
+	<cstdlib>
+
+1355795482 d:\smgcourse\assignments\sudoku\include\sudokuimage.h
+	<ctime>
+	<opencv2/opencv.hpp>
+	"Sudoku.h"
+	"HoughLine.h"
+
+1355093314 d:\smgcourse\assignments\sudoku\include\houghline.h
+
+1373897944 source:d:\smgcourse\assignments\sudoku\main.cpp
+	<ctime>
+	<fstream>
+	<iostream>
+	<opencv2/opencv.hpp>
+	"./include/OCR.h"
+	"./include/Sudoku.h"
+	"./include/GASolver.h"
+	"./include/SudokuImage.h"
+	"./include/NeuralNetwork.h"
+
+1355590074 d:\smgcourse\assignments\sudoku\include\ocr.h
+	<string>
+	<opencv2/opencv.hpp>
+	"./NeuralNetwork.h"
+
+1355538951 d:\smgcourse\assignments\sudoku\include\neuralnetwork.h
+	<vector>
+	<string>
+	"DataItem.h"
+	"NeuralLayer.h"
+
+1355538257 d:\smgcourse\assignments\sudoku\include\dataitem.h
+	<vector>
+
+1355960714 source:d:\smgcourse\assignments\sudoku\src\neuralnetwork.cpp
+	"../include/NeuralNetwork.h"
+	<iostream>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+	<limits>
+
+1373898014 source:d:\smgcourse\assignments\sudoku\src\ocr.cpp
+	"./../include/OCR.h"
+	<fstream>
+	<iostream>
+	<opencv2/opencv.hpp>
+

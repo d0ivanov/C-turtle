@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Sudoku" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\Sudoku" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\Sudoku" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O3" />
+			<Add option="-Wall" />
+			<Add option="-pg" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-pg -lgmon" />
+		</Linker>
+		<Unit filename="include\DataItem.h" />
+		<Unit filename="include\GASolver.h" />
+		<Unit filename="include\HoughLine.h" />
+		<Unit filename="include\NeuralLayer.h" />
+		<Unit filename="include\NeuralNetwork.h" />
+		<Unit filename="include\Neuron.h" />
+		<Unit filename="include\OCR.h" />
+		<Unit filename="include\Sudoku.h" />
+		<Unit filename="include\SudokuImage.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src\GASolver.cpp" />
+		<Unit filename="src\NeuralLayer.cpp" />
+		<Unit filename="src\NeuralNetwork.cpp" />
+		<Unit filename="src\Neuron.cpp" />
+		<Unit filename="src\OCR.cpp" />
+		<Unit filename="src\Sudoku.cpp" />
+		<Unit filename="src\SudokuImage.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

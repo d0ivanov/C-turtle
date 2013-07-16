@@ -1,0 +1,41 @@
+CC = g++
+CFLAGS 	= -c -O3 -Wall -fPIC -I ./include/ 
+LDFLAGS = 
+
+#include OpenCV
+CFLAGS 		+= $(shell pkg-config opencv --cflags) 
+LDFLAGS 	+= $(shell pkg-config opencv --libs)
+
+SOURCES		= $(wildcard ./src/*.cpp)
+
+OBJECTS		= $(SOURCES:.cpp=.o)
+
+EXECUTABLE 	= sudoku
+
+all: $(SOURCES) $(EXECUTABLE)
+	
+$(EXECUTABLE): $(OBJECTS) 
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
+
+.cpp.o:
+	$(CC) $(CFLAGS) $(CURDIR)/$< -o $@
+
+clean: 
+	rm -rf ./src/*.o $(EXECUTABLE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

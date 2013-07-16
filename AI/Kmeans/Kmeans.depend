@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1373723681 source:d:\smgcourse\kmeans\main.cpp
+	<ctime>
+	<iostream>
+	<opencv2/opencv.hpp>
+
+1373818029 source:d:\smgcourse\assignments\kmeans\main.cpp
+	<ctime>
+	<iostream>
+	<opencv2/opencv.hpp>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include\DataItem.h" open="0" top="0" tabpos="0">
+		<Cursor position="294" topLine="0" />
+	</File>
+	<File name="include\GASolver.h" open="0" top="0" tabpos="2">
+		<Cursor position="168" topLine="0" />
+	</File>
+	<File name="include\HoughLine.h" open="0" top="0" tabpos="0">
+		<Cursor position="1141" topLine="24" />
+	</File>
+	<File name="include\NeuralLayer.h" open="0" top="0" tabpos="4">
+		<Cursor position="547" topLine="0" />
+	</File>
+	<File name="include\NeuralNetwork.h" open="0" top="0" tabpos="2">
+		<Cursor position="1095" topLine="0" />
+	</File>
+	<File name="include\Neuron.h" open="0" top="0" tabpos="6">
+		<Cursor position="886" topLine="32" />
+	</File>
+	<File name="include\OCR.h" open="0" top="0" tabpos="8">
+		<Cursor position="681" topLine="7" />
+	</File>
+	<File name="include\Sudoku.h" open="0" top="0" tabpos="4">
+		<Cursor position="2807" topLine="66" />
+	</File>
+	<File name="include\SudokuImage.h" open="0" top="0" tabpos="2">
+		<Cursor position="142" topLine="2" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="975" topLine="29" />
+	</File>
+	<File name="src\GASolver.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="895" topLine="0" />
+	</File>
+	<File name="src\NeuralLayer.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="639" topLine="3" />
+	</File>
+	<File name="src\NeuralNetwork.cpp" open="1" top="1" tabpos="0">
+		<Cursor position="1384" topLine="45" />
+	</File>
+	<File name="src\Neuron.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="368" topLine="5" />
+	</File>
+	<File name="src\OCR.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="2831" topLine="13" />
+	</File>
+	<File name="src\Sudoku.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="153" topLine="0" />
+	</File>
+	<File name="src\SudokuImage.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="12012" topLine="415" />
+	</File>
+</CodeBlocks_layout_file>
